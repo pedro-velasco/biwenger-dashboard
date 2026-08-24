@@ -1,0 +1,2038 @@
+{
+  "metadata": {
+    "league_id": 92166,
+    "league_name": "LIGA 26/27",
+    "initial_balance": 40000000,
+    "participants": [
+      "carlos Heredia",
+      "Cristian",
+      "Jordi",
+      "Pedro",
+      "Víctor Peña",
+      "Victor Ramos",
+      "Victor Sanchez"
+    ],
+    "last_updated": "2026-08-24T08:47:36.583Z",
+    "notes": [
+      "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
+      "Prima = bonus de jornada (ingreso).",
+      "Salario = coste de plantilla por jornada (gasto).",
+      "Importes en euros (enteros, sin puntos ni símbolo €)."
+    ],
+    "last_fetched": "2026-08-24"
+  },
+  "transactions": [
+    {
+      "date": "2026-08-24",
+      "type": "Venta",
+      "player": "Isi Palazón",
+      "amount": 3348000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-24",
+      "type": "Venta",
+      "player": "Cabrera",
+      "amount": 3276900,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-24",
+      "type": "Venta",
+      "player": "Comesaña",
+      "amount": 4242500,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-24",
+      "type": "Venta",
+      "player": "Pere Milla",
+      "amount": 2566400,
+      "participant": "carlos Heredia",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-24",
+      "type": "Compra",
+      "player": "Camello",
+      "amount": 3190000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-23",
+      "type": "Clausula",
+      "player": "Javi Hernández",
+      "amount": 4060000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de Pedro"
+    },
+    {
+      "date": "2026-08-23",
+      "type": "Clausula",
+      "player": "Javi Hernández",
+      "amount": 4060000,
+      "participant": "Pedro",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a carlos Heredia"
+    },
+    {
+      "date": "2026-08-23",
+      "type": "Compra",
+      "player": "Francho Serrano",
+      "amount": 871000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-23",
+      "type": "Compra",
+      "player": "Camavinga",
+      "amount": 1711000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-22",
+      "type": "DepositoClausula",
+      "player": "Javi Hernández",
+      "amount": 500000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-",
+      "note": "Nueva cláusula: 3.680.000 €"
+    },
+    {
+      "date": "2026-08-22",
+      "type": "Venta",
+      "player": "Ez Abde",
+      "amount": 8899900,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Prima",
+      "player": null,
+      "amount": 50000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Jornada 1"
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Prima",
+      "player": null,
+      "amount": 200000,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Jornada 1"
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Prima",
+      "player": null,
+      "amount": 50000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Jornada 1"
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Venta",
+      "player": "Peio Canales",
+      "amount": 1010000,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Venta",
+      "player": "Salinas",
+      "amount": 545000,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Venta",
+      "player": "Luis Castro",
+      "amount": 418000,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Venta",
+      "player": "Isaac Romero",
+      "amount": 2279800,
+      "participant": "carlos Heredia",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Venta",
+      "player": "Renato Veiga",
+      "amount": 3901400,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Venta",
+      "player": "Manu Sánchez",
+      "amount": 1613200,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Compra",
+      "player": "Pablo Ramón",
+      "amount": 1110000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-20",
+      "type": "Compra",
+      "player": "Iñaki Williams",
+      "amount": 4011000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-19",
+      "type": "Venta",
+      "player": "Bardeli",
+      "amount": 944600,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-19",
+      "type": "Venta",
+      "player": "Oluwaseyi",
+      "amount": 389300,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-19",
+      "type": "Venta",
+      "player": "Juan Arana",
+      "amount": 525600,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-19",
+      "type": "Venta",
+      "player": "Gijselhart",
+      "amount": 1272100,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-19",
+      "type": "Venta",
+      "player": "Tunde",
+      "amount": 1126800,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-19",
+      "type": "Compra",
+      "player": "Robbie Ure",
+      "amount": 3724060,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-19",
+      "type": "Compra",
+      "player": "Gonzalo Villar",
+      "amount": 2410000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-19",
+      "type": "Compra",
+      "player": "Deossa",
+      "amount": 1450000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-19",
+      "type": "Compra",
+      "player": "Ez Abde",
+      "amount": 8641000,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-18",
+      "type": "Venta",
+      "player": "Sotelo",
+      "amount": 2666500,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-18",
+      "type": "Venta",
+      "player": "Antony",
+      "amount": 10780600,
+      "participant": "carlos Heredia",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-18",
+      "type": "Venta",
+      "player": "Logan Costa",
+      "amount": 177400,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-18",
+      "type": "Venta",
+      "player": "Alassane Diatta",
+      "amount": 244400,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-18",
+      "type": "Compra",
+      "player": "Renato Veiga",
+      "amount": 3824000,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-18",
+      "type": "Compra",
+      "player": "Arguibide",
+      "amount": 379000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-17",
+      "type": "Venta",
+      "player": "Etta Eyong",
+      "amount": 4315700,
+      "participant": "carlos Heredia",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-17",
+      "type": "Venta",
+      "player": "Cardoso",
+      "amount": 152900,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-17",
+      "type": "Venta",
+      "player": "Kervin Arriaga",
+      "amount": 1281300,
+      "participant": "carlos Heredia",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-17",
+      "type": "Venta",
+      "player": "Moussa Diarra",
+      "amount": 176800,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-17",
+      "type": "Compra",
+      "player": "Miguel Sierra",
+      "amount": 1640000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-17",
+      "type": "Compra",
+      "player": "Andrés Martín",
+      "amount": 5560010,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-16",
+      "type": "Clausula",
+      "player": "Javi Hernández",
+      "amount": 700000,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de carlos Heredia"
+    },
+    {
+      "date": "2026-08-16",
+      "type": "Clausula",
+      "player": "Javi Hernández",
+      "amount": 700000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a Pedro"
+    },
+    {
+      "date": "2026-08-16",
+      "type": "Venta",
+      "player": "Neyou",
+      "amount": 183700,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-16",
+      "type": "Compra",
+      "player": "Unai Núñez",
+      "amount": 1890000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-16",
+      "type": "Compra",
+      "player": "Pol Lozano",
+      "amount": 1152940,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-15",
+      "type": "Clausula",
+      "player": "Pedrosa",
+      "amount": 600000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de Victor Ramos"
+    },
+    {
+      "date": "2026-08-15",
+      "type": "Clausula",
+      "player": "Pedrosa",
+      "amount": 600000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a Cristian"
+    },
+    {
+      "date": "2026-08-15",
+      "type": "Venta",
+      "player": "Adrián Niño",
+      "amount": 1330100,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-15",
+      "type": "Venta",
+      "player": "Pol Lozano",
+      "amount": 1161600,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-15",
+      "type": "Venta",
+      "player": "Djené",
+      "amount": 2249900,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-15",
+      "type": "Venta",
+      "player": "Diomande",
+      "amount": 14141500,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-15",
+      "type": "Venta",
+      "player": "Swedberg",
+      "amount": 2753000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-15",
+      "type": "Compra",
+      "player": "Logan Costa",
+      "amount": 174000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-15",
+      "type": "Compra",
+      "player": "Nico Guillén",
+      "amount": 988470,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Venta",
+      "player": "David Soria",
+      "amount": 5887400,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Venta",
+      "player": "Pau Navarro",
+      "amount": 2561300,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Venta",
+      "player": "Loureiro",
+      "amount": 2173900,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Venta",
+      "player": "Moi Gómez",
+      "amount": 603800,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Venta",
+      "player": "Álvaro García",
+      "amount": 3999700,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Venta",
+      "player": "Bisiwu",
+      "amount": 330600,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Venta",
+      "player": "Mayoral",
+      "amount": 2387800,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Venta",
+      "player": "Beñat Prados",
+      "amount": 180600,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Compra",
+      "player": "Sancet",
+      "amount": 6188000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Compra",
+      "player": "Carlos Maciá",
+      "amount": 655000,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-14",
+      "type": "Compra",
+      "player": "Alassane Diatta",
+      "amount": 244010,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-13",
+      "type": "Venta",
+      "player": "Oyarzabal",
+      "amount": 14306600,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-13",
+      "type": "Venta",
+      "player": "Iago Aspas",
+      "amount": 2355900,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-13",
+      "type": "Venta",
+      "player": "Sadiq",
+      "amount": 2635200,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-13",
+      "type": "Venta",
+      "player": "Diakhaby",
+      "amount": 856100,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-13",
+      "type": "Compra",
+      "player": "Diomande",
+      "amount": 14309910,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-13",
+      "type": "Compra",
+      "player": "Budimir",
+      "amount": 10962750,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-13",
+      "type": "Compra",
+      "player": "Iñigo Vicente",
+      "amount": 5741000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-13",
+      "type": "Compra",
+      "player": "Germán Valera",
+      "amount": 6560000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-13",
+      "type": "Compra",
+      "player": "Sergio Herrera",
+      "amount": 4700000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Venta",
+      "player": "Hugo Duro",
+      "amount": 3149600,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Venta",
+      "player": "Huijsen",
+      "amount": 4219400,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Venta",
+      "player": "Dubasin",
+      "amount": 3255000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Venta",
+      "player": "Koundé",
+      "amount": 5488200,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Venta",
+      "player": "Natan",
+      "amount": 3095000,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Venta",
+      "player": "Le Normand",
+      "amount": 2275900,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Venta",
+      "player": "Dotor",
+      "amount": 2406200,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Venta",
+      "player": "Jensen",
+      "amount": 1812800,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Compra",
+      "player": "Fornals",
+      "amount": 10160000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Compra",
+      "player": "Germán Parreño",
+      "amount": 150940,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Compra",
+      "player": "Moussa Diarra",
+      "amount": 170000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Compra",
+      "player": "Yangel Herrera",
+      "amount": 2201000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Compra",
+      "player": "Álvaro Núñez",
+      "amount": 573000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-12",
+      "type": "Compra",
+      "player": "Mendoza",
+      "amount": 680000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Clausula",
+      "player": "Iker Muñoz",
+      "amount": 480000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de Cristian"
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Clausula",
+      "player": "Iker Muñoz",
+      "amount": 480000,
+      "participant": "Cristian",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a Victor Ramos"
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Venta",
+      "player": "Boyé",
+      "amount": 3848500,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Venta",
+      "player": "Redondo",
+      "amount": 151200,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Venta",
+      "player": "Justin de Haas",
+      "amount": 3266800,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Venta",
+      "player": "Jordán",
+      "amount": 154800,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Venta",
+      "player": "Neto",
+      "amount": 790400,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Compra",
+      "player": "Tunde",
+      "amount": 1153240,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Compra",
+      "player": "Moleiro",
+      "amount": 9577000,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Compra",
+      "player": "Isi Palazón",
+      "amount": 2610000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-11",
+      "type": "Compra",
+      "player": "Jauregizar",
+      "amount": 3588000,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Venta",
+      "player": "Juanpe Melero",
+      "amount": 156300,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Venta",
+      "player": "Tenaglia",
+      "amount": 3482200,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Venta",
+      "player": "Zaid Romero",
+      "amount": 3914400,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Venta",
+      "player": "Carlos López",
+      "amount": 147700,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Compra",
+      "player": "Terrats",
+      "amount": 3090000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Compra",
+      "player": "Dotor",
+      "amount": 2560000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Compra",
+      "player": "Facundo Bernal",
+      "amount": 1920000,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Compra",
+      "player": "Guruzeta",
+      "amount": 3909000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Compra",
+      "player": "Oluwaseyi",
+      "amount": 363130,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-10",
+      "type": "Compra",
+      "player": "Pau Navarro",
+      "amount": 2466540,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-09",
+      "type": "Venta",
+      "player": "Yago Santiago",
+      "amount": 153400,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-09",
+      "type": "Venta",
+      "player": "#15455",
+      "amount": 200000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-09",
+      "type": "Compra",
+      "player": "Pol Lozano",
+      "amount": 1080000,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-09",
+      "type": "Compra",
+      "player": "Koundé",
+      "amount": 5242760,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-09",
+      "type": "Compra",
+      "player": "Mayoral",
+      "amount": 2040000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-09",
+      "type": "Compra",
+      "player": "Jensen",
+      "amount": 1900000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-09",
+      "type": "Compra",
+      "player": "Rubén Vargas",
+      "amount": 3611000,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-09",
+      "type": "Compra",
+      "player": "Dubasin",
+      "amount": 3401000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-09",
+      "type": "Compra",
+      "player": "Bardeli",
+      "amount": 870000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-08",
+      "type": "Venta",
+      "player": "Claudio Giráldez",
+      "amount": 1264400,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-08",
+      "type": "Compra",
+      "player": "Pablo Ibáñez",
+      "amount": 1880000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-08",
+      "type": "Compra",
+      "player": "Huijsen",
+      "amount": 4420000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-08",
+      "type": "Compra",
+      "player": "Javi Hernández",
+      "amount": 211750,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-08",
+      "type": "Compra",
+      "player": "Cardoso",
+      "amount": 150000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-08",
+      "type": "Compra",
+      "player": "Nteka",
+      "amount": 171750,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-08",
+      "type": "Compra",
+      "player": "David Soria",
+      "amount": 5650000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-08",
+      "type": "Compra",
+      "player": "Dani Martín",
+      "amount": 151290,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Venta",
+      "player": "Pablo Campos",
+      "amount": 1488900,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Compra",
+      "player": "Manu Sánchez",
+      "amount": 1488000,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Compra",
+      "player": "Pedrosa",
+      "amount": 260000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Compra",
+      "player": "Andrés García",
+      "amount": 1025000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Compra",
+      "player": "De la Fuente",
+      "amount": 3267060,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Compra",
+      "player": "Hidalgo",
+      "amount": 590010,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Compra",
+      "player": "Beñat Prados",
+      "amount": 200000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Compra",
+      "player": "Herrando",
+      "amount": 220000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Compra",
+      "player": "Hugo Duro",
+      "amount": 3190000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-07",
+      "type": "Compra",
+      "player": "Vinícius Jr",
+      "amount": 17559430,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-06",
+      "type": "Venta",
+      "player": "Nobel Mendy",
+      "amount": 1280100,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-06",
+      "type": "Venta",
+      "player": "Sergi Cardona",
+      "amount": 2014200,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-06",
+      "type": "Compra",
+      "player": "Jonny Castro",
+      "amount": 1365950,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-06",
+      "type": "Compra",
+      "player": "Satriano",
+      "amount": 4320000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-06",
+      "type": "Compra",
+      "player": "Carlos López",
+      "amount": 150000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-06",
+      "type": "Compra",
+      "player": "Peio Canales",
+      "amount": 1610000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-06",
+      "type": "Compra",
+      "player": "Javi Rodríguez",
+      "amount": 1902510,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-05",
+      "type": "Venta",
+      "player": "Espí",
+      "amount": 5386000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-05",
+      "type": "Compra",
+      "player": "Fer Niño",
+      "amount": 2633560,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-05",
+      "type": "Compra",
+      "player": "Adrián Niño",
+      "amount": 1366000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-05",
+      "type": "Compra",
+      "player": "Larrubia",
+      "amount": 6041000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-05",
+      "type": "Compra",
+      "player": "Bretones",
+      "amount": 1525000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-05",
+      "type": "Compra",
+      "player": "Zaid Romero",
+      "amount": 3713500,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "Venta",
+      "player": "Chavarría",
+      "amount": 3232100,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "Venta",
+      "player": "Bernardo Silva",
+      "amount": 9769200,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "Compra",
+      "player": "Bisiwu",
+      "amount": 245000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "Compra",
+      "player": "Etta Eyong",
+      "amount": 4150000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "Compra",
+      "player": "Luis García",
+      "amount": 503500,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "Compra",
+      "player": "José Alberto López",
+      "amount": 390000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "Compra",
+      "player": "Claudio Giráldez",
+      "amount": 1126670,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "Compra",
+      "player": "Tenaglia",
+      "amount": 3311290,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-03",
+      "type": "Compra",
+      "player": "Quagliata",
+      "amount": 1920010,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-03",
+      "type": "Compra",
+      "player": "Lookman",
+      "amount": 8150000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-02",
+      "type": "Compra",
+      "player": "Guido Rodríguez",
+      "amount": 4444000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-02",
+      "type": "Compra",
+      "player": "Pablo Campos",
+      "amount": 2267825,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-02",
+      "type": "Compra",
+      "player": "Filip Ugrinic",
+      "amount": 710800,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-02",
+      "type": "Compra",
+      "player": "Óskarsson",
+      "amount": 3333000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-02",
+      "type": "Compra",
+      "player": "Luka Sucic",
+      "amount": 2260000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-02",
+      "type": "Compra",
+      "player": "Dimitrievski",
+      "amount": 3590000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-01",
+      "type": "Venta",
+      "player": "Osorio",
+      "amount": 572600,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-01",
+      "type": "Compra",
+      "player": "Isaac Romero",
+      "amount": 2081830,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-01",
+      "type": "Compra",
+      "player": "Turrientes",
+      "amount": 1361830,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-01",
+      "type": "Compra",
+      "player": "Sergi Cardona",
+      "amount": 1890000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-01",
+      "type": "Compra",
+      "player": "Oyarzabal",
+      "amount": 13371590,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-01",
+      "type": "Compra",
+      "player": "Boyé",
+      "amount": 3741000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-31",
+      "type": "Venta",
+      "player": "Logan Costa",
+      "amount": 163300,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-07-31",
+      "type": "Venta",
+      "player": "Gordon",
+      "amount": 10172700,
+      "participant": "Victor Ramos",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-07-31",
+      "type": "Compra",
+      "player": "Unai López",
+      "amount": 1045666,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-31",
+      "type": "Compra",
+      "player": "Le Normand",
+      "amount": 2122000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-31",
+      "type": "Compra",
+      "player": "Nico Williams",
+      "amount": 8090000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-31",
+      "type": "Compra",
+      "player": "Foyth",
+      "amount": 1674000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Venta",
+      "player": "#41563",
+      "amount": 159900,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Venta",
+      "player": "Diego Conde",
+      "amount": 385400,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Compra",
+      "player": "Diakhaby",
+      "amount": 680000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Compra",
+      "player": "Salinas",
+      "amount": 350550,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Compra",
+      "player": "Gabriel Suazo",
+      "amount": 1390000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Compra",
+      "player": "Antony",
+      "amount": 9910000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-30",
+      "type": "Compra",
+      "player": "Kervin Arriaga",
+      "amount": 1550010,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Venta",
+      "player": "Carreira",
+      "amount": 2167800,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Compra",
+      "player": "Gijselhart",
+      "amount": 1366000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Compra",
+      "player": "Odysseas",
+      "amount": 3533000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Compra",
+      "player": "Juan Arana",
+      "amount": 411000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Compra",
+      "player": "Sotelo",
+      "amount": 1870000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Compra",
+      "player": "Bellerín",
+      "amount": 2570000,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Compra",
+      "player": "Iago Aspas",
+      "amount": 1960000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "Compra",
+      "player": "#15455",
+      "amount": 218000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "Compra",
+      "player": "Juanpe Melero",
+      "amount": 172000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "Compra",
+      "player": "Comesaña",
+      "amount": 4470460,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "Compra",
+      "player": "#41563",
+      "amount": 170010,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "Compra",
+      "player": "Courtois",
+      "amount": 6040000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "Compra",
+      "player": "Christensen",
+      "amount": 250010,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "Compra",
+      "player": "Justin de Haas",
+      "amount": 3145450,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "Compra",
+      "player": "Jordán",
+      "amount": 180010,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "Compra",
+      "player": "Yago Santiago",
+      "amount": 150010,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "Compra",
+      "player": "Cristian Rivero",
+      "amount": 150000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-27",
+      "type": "Compra",
+      "player": "Iker Muñoz",
+      "amount": 205018,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-27",
+      "type": "Compra",
+      "player": "Unai Simón",
+      "amount": 4081550,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-27",
+      "type": "Compra",
+      "player": "Espí",
+      "amount": 6845000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-27",
+      "type": "Compra",
+      "player": "Antonio Blanco",
+      "amount": 3599000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-27",
+      "type": "Compra",
+      "player": "Moi Gómez",
+      "amount": 645000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-27",
+      "type": "Compra",
+      "player": "Mantilla",
+      "amount": 804650,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-27",
+      "type": "Compra",
+      "player": "Pere Milla",
+      "amount": 2482870,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-27",
+      "type": "Compra",
+      "player": "Natan",
+      "amount": 1900470,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-26",
+      "type": "Compra",
+      "player": "De Galarreta",
+      "amount": 2845000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-26",
+      "type": "Compra",
+      "player": "Redondo",
+      "amount": 160040,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-26",
+      "type": "Compra",
+      "player": "Pubill",
+      "amount": 5800000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-26",
+      "type": "Compra",
+      "player": "Diego Conde",
+      "amount": 433980,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-26",
+      "type": "Compra",
+      "player": "Terzić",
+      "amount": 830000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-25",
+      "type": "Compra",
+      "player": "Neto",
+      "amount": 500000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-25",
+      "type": "Compra",
+      "player": "Catena",
+      "amount": 3401750,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-25",
+      "type": "Compra",
+      "player": "Marcos Llorente",
+      "amount": 5999000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-25",
+      "type": "Compra",
+      "player": "Carlos Álvarez",
+      "amount": 3541000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-25",
+      "type": "Compra",
+      "player": "Cabrera",
+      "amount": 3744000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-24",
+      "type": "Compra",
+      "player": "Toljan",
+      "amount": 1145000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-24",
+      "type": "Compra",
+      "player": "Loureiro",
+      "amount": 1145650,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-24",
+      "type": "Compra",
+      "player": "Gordon",
+      "amount": 10605000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-24",
+      "type": "Compra",
+      "player": "Álvaro García",
+      "amount": 3145040,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-24",
+      "type": "Compra",
+      "player": "Djené",
+      "amount": 1294690,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-24",
+      "type": "Compra",
+      "player": "Carreira",
+      "amount": 2399000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-23",
+      "type": "Compra",
+      "player": "Pépé",
+      "amount": 8741000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-23",
+      "type": "Compra",
+      "player": "Marc Aguado",
+      "amount": 1575000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-23",
+      "type": "Compra",
+      "player": "Logan Costa",
+      "amount": 170020,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-23",
+      "type": "Compra",
+      "player": "Chavarría",
+      "amount": 2420000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-23",
+      "type": "Compra",
+      "player": "Nsongo",
+      "amount": 1665000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-23",
+      "type": "Compra",
+      "player": "Bernardo Silva",
+      "amount": 8800000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-23",
+      "type": "Compra",
+      "player": "Sadiq",
+      "amount": 1930000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-22",
+      "type": "Compra",
+      "player": "Nobel Mendy",
+      "amount": 1120000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-22",
+      "type": "Compra",
+      "player": "Laporte",
+      "amount": 3920390,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-22",
+      "type": "Compra",
+      "player": "Aramburu",
+      "amount": 1999000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-22",
+      "type": "Compra",
+      "player": "Mourinho",
+      "amount": 4846250,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-22",
+      "type": "Compra",
+      "player": "Swedberg",
+      "amount": 1850000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "Compra",
+      "player": "Roberto Fernández",
+      "amount": 2595110,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "Compra",
+      "player": "Marc Roca",
+      "amount": 1440000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "Compra",
+      "player": "Santiago Mouriño",
+      "amount": 3190000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "Compra",
+      "player": "Aimar Oroz",
+      "amount": 3510000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "Compra",
+      "player": "Luis Castro",
+      "amount": 250010,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "Compra",
+      "player": "Starfelt",
+      "amount": 821000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "Compra",
+      "player": "Davinchi",
+      "amount": 250070,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "Compra",
+      "player": "Oblak",
+      "amount": 3532870,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "Compra",
+      "player": "Osorio",
+      "amount": 721004,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "Compra",
+      "player": "Neyou",
+      "amount": 240100,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    }
+  ]
+}
