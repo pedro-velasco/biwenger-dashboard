@@ -12,16 +12,56 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-08-24T09:20:55.141Z",
+    "last_updated": "2026-08-25T07:07:15.492Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-08-24"
+    "last_fetched": "2026-08-25"
   },
   "transactions": [
+    {
+      "date": "2026-08-25",
+      "type": "Venta",
+      "player": "Álvaro Núñez",
+      "amount": 530000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Compra",
+      "player": "Guridi",
+      "amount": 3150000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Compra",
+      "player": "Kang-in Lee",
+      "amount": 8120000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Compra",
+      "player": "Eddahchouri",
+      "amount": 670410,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Compra",
+      "player": "Aihen",
+      "amount": 234000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-08-24",
       "type": "Venta",
@@ -61,6 +101,24 @@
       "amount": 3190000,
       "participant": "Cristian",
       "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-24",
+      "type": "Clausula",
+      "player": "Christensen",
+      "amount": 1040000,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de Pedro"
+    },
+    {
+      "date": "2026-08-24",
+      "type": "Clausula",
+      "player": "Christensen",
+      "amount": 1040000,
+      "participant": "Pedro",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a Jordi"
     },
     {
       "date": "2026-08-23",
