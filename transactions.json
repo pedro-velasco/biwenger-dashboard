@@ -12,16 +12,56 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-08-25T07:07:15.492Z",
+    "last_updated": "2026-08-26T07:07:16.689Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-08-25"
+    "last_fetched": "2026-08-26"
   },
   "transactions": [
+    {
+      "date": "2026-08-26",
+      "type": "Venta",
+      "player": "Nico Williams",
+      "amount": 9311300,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Venta",
+      "player": "Terzić",
+      "amount": 1179300,
+      "participant": "carlos Heredia",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Venta",
+      "player": "Fornals",
+      "amount": 9788100,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Compra",
+      "player": "Ejuke",
+      "amount": 1890000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Compra",
+      "player": "Valverde",
+      "amount": 11794690,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-08-25",
       "type": "Venta",
@@ -61,6 +101,60 @@
       "amount": 234000,
       "participant": "Victor Ramos",
       "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Prima",
+      "player": null,
+      "amount": 950000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Jornada 2"
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Prima",
+      "player": null,
+      "amount": 900000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Jornada 2"
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Prima",
+      "player": null,
+      "amount": 1000000,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Jornada 2"
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Prima",
+      "player": null,
+      "amount": 1100000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Jornada 2"
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Prima",
+      "player": null,
+      "amount": 1250000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Jornada 2"
+    },
+    {
+      "date": "2026-08-25",
+      "type": "Prima",
+      "player": null,
+      "amount": 1500000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Jornada 2"
     },
     {
       "date": "2026-08-24",
