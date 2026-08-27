@@ -28,6 +28,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add transactions.json
+          git add transactions.json league_config.json
           git diff --staged --quiet || git commit -m "data: update transactions $(date -u +%Y-%m-%dT%H:%M)Z"
           git push

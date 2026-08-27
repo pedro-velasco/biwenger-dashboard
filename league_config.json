@@ -1,0 +1,85 @@
+{
+  "league_id": 92166,
+  "league_name": "LIGA 26/27",
+  "last_updated": "2026-08-27T21:36:46.668Z",
+  "plantilla": {
+    "tamano_maximo": 18,
+    "max_jugadores_mismo_club": 4
+  },
+  "mercado": {
+    "jugadores_diarios": 8,
+    "duracion_dias": 1,
+    "velocidad": "daily",
+    "max_jugadores_en_venta": 4,
+    "venta_inmediata_pct": 50,
+    "pujas_sobre_valor": true,
+    "ofertas_usuarios": "always",
+    "intercambios": false,
+    "modo_transferencias": "delayed"
+  },
+  "salarios": {
+    "fijo_por_jugador": 10000,
+    "variable_pct": 1,
+    "intervalo": "roundEnd",
+    "formula": "(nº_jugadores × salariesFixed) + (valor_plantilla × salariesVariable / 100)"
+  },
+  "clausulas": {
+    "tipo": "steal",
+    "porcentaje_valor": 200,
+    "deposito_permitido": true,
+    "horas_bloqueado_jornada": 24,
+    "retraso_activacion_dias": 0
+  },
+  "primas": {
+    "por_posicion_jornada": [
+      {
+        "posicion": 1,
+        "importe": 800000
+      },
+      {
+        "posicion": 2,
+        "importe": 900000
+      },
+      {
+        "posicion": 3,
+        "importe": 1000000
+      },
+      {
+        "posicion": 4,
+        "importe": 1100000
+      },
+      {
+        "posicion": 5,
+        "importe": 1250000
+      },
+      {
+        "posicion": 6,
+        "importe": 1400000
+      },
+      {
+        "posicion": 7,
+        "importe": 1550000
+      },
+      {
+        "posicion": 8,
+        "importe": 1700000
+      },
+      {
+        "posicion": 9,
+        "importe": 1900000
+      }
+    ],
+    "por_gol": 50000,
+    "por_porteria_cero": 100000,
+    "negativas_permitidas": true
+  },
+  "alineacion": {
+    "capitan": true,
+    "capitan_multiplicador_max": 5,
+    "goleador": true,
+    "goleador_multiplicador_max": 5,
+    "cambios_por_jornada": 1,
+    "reservas": true,
+    "entrenador": true
+  }
+}

@@ -5,97 +5,102 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LIGA 26/27 — Dashboard Financiero</title>
 <style>
-  :root {
-    --bg: #0f1117;
-    --bg2: #1a1d27;
-    --bg3: #242736;
-    --border: #2e3247;
-    --text: #e2e4ef;
-    --muted: #7b7f9a;
-    --green: #22c55e;
-    --red: #ef4444;
-    --yellow: #f59e0b;
-    --blue: #3b82f6;
-    --accent: #6366f1;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; line-height: 1.5; }
+:root {
+  --bg: #0f1117; --bg2: #1a1d27; --bg3: #242736; --border: #2e3247;
+  --text: #e2e4ef; --muted: #7b7f9a;
+  --green: #22c55e; --red: #ef4444; --yellow: #f59e0b; --accent: #6366f1;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; line-height: 1.5; }
 
-  header { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
-  header h1 { font-size: 18px; font-weight: 700; color: var(--text); }
-  header .meta { font-size: 12px; color: var(--muted); }
+/* ── Header ── */
+header { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+header h1 { font-size: 18px; font-weight: 700; }
+.meta { font-size: 12px; color: var(--muted); }
+.warning { background: #2d1f05; border: 1px solid #78350f; color: var(--yellow); padding: 10px 24px; font-size: 13px; display: flex; align-items: center; gap: 8px; }
 
-  .warning { background: #2d1f05; border: 1px solid #78350f; color: var(--yellow); padding: 10px 24px; font-size: 13px; display: flex; align-items: center; gap: 8px; }
-  .warning span { font-size: 16px; }
+main { max-width: 1200px; margin: 0 auto; padding: 24px 16px; }
+h2 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 28px 0 12px; }
 
-  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+/* ── Config panel ── */
+.config-panel { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.config-panel summary { padding: 12px 16px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-weight: 600; font-size: 13px; user-select: none; list-style: none; }
+.config-panel summary::-webkit-details-marker { display: none; }
+.chevron-icon { color: var(--muted); font-size: 11px; transition: transform .2s; }
+.config-panel[open] .chevron-icon { transform: rotate(180deg); }
+.config-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1px; background: var(--border); border-top: 1px solid var(--border); }
+.config-item { background: var(--bg); padding: 12px 16px; }
+.config-item .ci-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 3px; }
+.config-item .ci-value { font-size: 14px; font-weight: 600; }
+.config-item .ci-note { font-size: 11px; color: var(--muted); margin-top: 1px; }
 
-  h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 12px; }
+/* ── Rankings ── */
+.rankings { width: 100%; border-collapse: collapse; }
+.rankings th { text-align: left; padding: 8px 12px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); border-bottom: 1px solid var(--border); }
+.rankings td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.rankings tr:last-child td { border-bottom: none; }
+.rankings tr:hover td { background: var(--bg3); cursor: pointer; }
+.rank-num { font-weight: 700; color: var(--muted); width: 28px; }
+.p-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 8px; flex-shrink: 0; }
+.p-name { font-weight: 600; }
+.bal-pos { color: var(--green); font-weight: 700; font-size: 15px; }
+.bal-neg { color: var(--red); font-weight: 700; font-size: 15px; }
+.amt-pos { color: var(--green); }
+.amt-neg { color: var(--red); }
 
-  /* Rankings table */
-  .rankings { width: 100%; border-collapse: collapse; margin-bottom: 32px; }
-  .rankings th { text-align: left; padding: 8px 12px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); border-bottom: 1px solid var(--border); }
-  .rankings td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
-  .rankings tr:last-child td { border-bottom: none; }
-  .rankings tr:hover td { background: var(--bg3); cursor: pointer; }
+/* ── Participant selector ── */
+.p-selector { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.p-toggle { display: flex; align-items: center; gap: 7px; padding: 6px 12px; border-radius: 20px; border: 1px solid var(--border); background: var(--bg2); cursor: pointer; font-size: 13px; transition: opacity .15s, border-color .15s; user-select: none; }
+.p-toggle:hover { border-color: var(--muted); }
+.p-toggle.off { opacity: 0.3; }
+.p-toggle .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
-  .rank-num { font-weight: 700; color: var(--muted); width: 28px; }
-  .participant-name { font-weight: 600; }
-  .balance-cell { font-weight: 700; font-size: 15px; }
-  .balance-pos { color: var(--green); }
-  .balance-neg { color: var(--red); }
-  .balance-na { color: var(--muted); font-size: 13px; }
-  .ops-count { color: var(--muted); font-size: 12px; }
-  .incomplete-badge { background: #2d1f05; color: var(--yellow); font-size: 10px; padding: 2px 6px; border-radius: 4px; }
+/* ── Chart tabs ── */
+.chart-tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--border); margin-bottom: 16px; }
+.ctab { padding: 8px 16px; font-size: 13px; font-weight: 500; color: var(--muted); cursor: pointer; background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color .15s, border-color .15s; }
+.ctab:hover { color: var(--text); }
+.ctab.active { color: var(--text); border-bottom-color: var(--accent); }
 
-  .bar-container { width: 100px; height: 6px; background: var(--bg3); border-radius: 3px; overflow: hidden; }
-  .bar-fill { height: 100%; border-radius: 3px; transition: width .3s; }
-  .bar-pos { background: var(--green); }
-  .bar-neg { background: var(--red); }
+/* ── Chart panels ── */
+.chart-panel { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 20px; position: relative; height: 380px; }
+.chart-empty { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 13px; }
 
-  /* Detail panels */
-  .detail-grid { display: grid; gap: 16px; }
+/* ── Detail accordion ── */
+.detail-grid { display: grid; gap: 10px; }
+.p-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.p-card-head { padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; }
+.p-card-head:hover { background: var(--bg3); }
+.p-card-head .pname { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+.p-card-head .psummary { display: flex; gap: 20px; align-items: center; }
+.p-card-head .pchev { color: var(--muted); font-size: 12px; transition: transform .2s; }
+.p-card-head.open .pchev { transform: rotate(180deg); }
+.stat-pill { display: flex; flex-direction: column; align-items: flex-end; }
+.stat-pill .sp-label { font-size: 10px; color: var(--muted); text-transform: uppercase; }
+.stat-pill .sp-val { font-size: 14px; font-weight: 700; }
+.p-card-body { display: none; border-top: 1px solid var(--border); }
+.p-card-body.open { display: block; }
+.tx-table { width: 100%; border-collapse: collapse; }
+.tx-table th { text-align: left; padding: 8px 16px; font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--muted); background: var(--bg3); }
+.tx-table td { padding: 8px 16px; border-bottom: 1px solid var(--border); font-size: 13px; }
+.tx-table tr:last-child td { border-bottom: none; }
+.tx-type { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.tx-Compra           { background:#1e2a3a; color:#60a5fa; }
+.tx-Venta            { background:#14271e; color:#4ade80; }
+.tx-Clausula         { background:#2d1f05; color:#fbbf24; }
+.tx-Prima            { background:#1a1f35; color:#a78bfa; }
+.tx-Salario          { background:#2a1515; color:#f87171; }
+.tx-DepositoClausula { background:#1a2a1a; color:#86efac; }
+.tx-total td { background: var(--bg3); font-weight: 600; }
 
-  .participant-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-  .card-header { padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; }
-  .card-header:hover { background: var(--bg3); }
-  .card-header .name { font-weight: 600; font-size: 15px; }
-  .card-header .summary { display: flex; gap: 20px; align-items: center; }
-  .card-header .chevron { color: var(--muted); transition: transform .2s; font-size: 12px; }
-  .card-header.open .chevron { transform: rotate(180deg); }
+footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); margin-top: 32px; }
 
-  .stat-pill { display: flex; flex-direction: column; align-items: flex-end; }
-  .stat-pill .label { font-size: 10px; color: var(--muted); text-transform: uppercase; }
-  .stat-pill .value { font-size: 14px; font-weight: 700; }
-
-  .card-body { display: none; border-top: 1px solid var(--border); }
-  .card-body.open { display: block; }
-
-  .tx-table { width: 100%; border-collapse: collapse; }
-  .tx-table th { text-align: left; padding: 8px 16px; font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--muted); background: var(--bg3); }
-  .tx-table td { padding: 8px 16px; border-bottom: 1px solid var(--border); font-size: 13px; }
-  .tx-table tr:last-child td { border-bottom: none; }
-
-  .tx-type { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
-  .tx-Compra    { background: #1e2a3a; color: #60a5fa; }
-  .tx-Venta     { background: #14271e; color: #4ade80; }
-  .tx-Clausula  { background: #2d1f05; color: #fbbf24; }
-  .tx-Prima            { background: #1a1f35; color: #a78bfa; }
-  .tx-Salario          { background: #2a1515; color: #f87171; }
-  .tx-DepositoClausula { background: #1a2a1a; color: #86efac; }
-
-  .amount-pos { color: var(--green); font-weight: 600; }
-  .amount-neg { color: var(--red); font-weight: 600; }
-
-  .totals-row td { background: var(--bg3); font-weight: 600; }
-
-  footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); margin-top: 32px; }
-
-  @media (max-width: 640px) {
-    .bar-container { display: none; }
-    .card-header .summary { gap: 10px; }
-    .tx-table th:nth-child(3), .tx-table td:nth-child(3) { display: none; }
-  }
+@media (max-width: 640px) {
+  .config-grid { grid-template-columns: 1fr 1fr; }
+  .p-card-head .psummary { gap: 10px; }
+  .tx-table th:nth-child(3), .tx-table td:nth-child(3) { display: none; }
+  .rankings th:nth-child(4), .rankings td:nth-child(4),
+  .rankings th:nth-child(5), .rankings td:nth-child(5) { display: none; }
+}
 </style>
 </head>
 <body>
@@ -106,184 +111,439 @@
 </header>
 
 <div class="warning" id="warning-banner" style="display:none">
-  <span>⚠️</span>
-  <span id="warning-text"></span>
+  <span>⚠️</span><span id="warning-text"></span>
 </div>
 
 <main>
+
+  <h2>Configuración de la liga</h2>
+  <details class="config-panel" id="config-panel">
+    <summary><span>Reglas LIGA 26/27</span><span class="chevron-icon">▼</span></summary>
+    <div class="config-grid" id="config-grid"></div>
+  </details>
+
   <h2>Clasificación Financiera</h2>
-  <table class="rankings" id="rankings-table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Participante</th>
-        <th>Saldo calculado</th>
-        <th>Balance</th>
-        <th>Ingresos</th>
-        <th>Gastos</th>
-        <th>Ops</th>
-      </tr>
-    </thead>
+  <table class="rankings">
+    <thead><tr>
+      <th>#</th><th>Participante</th><th>Saldo</th><th>Ingresos</th><th>Gastos</th>
+    </tr></thead>
     <tbody id="rankings-body"></tbody>
   </table>
 
+  <h2>Análisis</h2>
+  <div class="p-selector" id="p-selector"></div>
+
+  <div class="chart-tabs" id="chart-tabs">
+    <button class="ctab active" data-tab="saldo">Evolución del saldo</button>
+    <button class="ctab" data-tab="primas">Primas por jornada</button>
+    <button class="ctab" data-tab="gastos">Desglose de gastos</button>
+  </div>
+  <div id="tab-saldo" class="chart-panel"><canvas id="chart-saldo"></canvas></div>
+  <div id="tab-primas" class="chart-panel" style="display:none"><canvas id="chart-primas"></canvas></div>
+  <div id="tab-gastos" class="chart-panel" style="display:none"><canvas id="chart-gastos"></canvas></div>
+
   <h2>Detalle por participante</h2>
   <div class="detail-grid" id="detail-grid"></div>
+
 </main>
 
 <footer id="footer">Dashboard generado a partir de datos del feed de Biwenger.</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script>
-const INITIAL_BALANCE = 40_000_000;
+const INITIAL = 40_000_000;
 
-function fmt(n) {
-  return new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(n);
+// Fixed colors per participant index (never reordered by rank)
+const PALETTE = ['#3b82f6','#4ade80','#fb923c','#a78bfa','#fbbf24','#f87171','#22d3ee'];
+const EXPENSE_COLORS = {
+  'Compra':           '#ef4444',
+  'Salario':          '#6366f1',
+  'Clausula':         '#f97316',
+  'DepositoClausula': '#14b8a6',
+};
+const EXPENSE_LABELS = {
+  'Compra': 'Compras', 'Salario': 'Salarios',
+  'Clausula': 'Cláusulas', 'DepositoClausula': 'Depósitos cláusula',
+};
+
+// ── Formatters ─────────────────────────────────────────────────────────────────
+const fmt  = n => new Intl.NumberFormat('es-ES', { style:'currency', currency:'EUR', maximumFractionDigits:0 }).format(n);
+const fmtM = n => {
+  const abs = Math.abs(n);
+  if (abs >= 1e6) return (n/1e6).toFixed(1).replace('.0','') + 'M€';
+  if (abs >= 1e3) return Math.round(n/1e3) + 'k€';
+  return n + '€';
+};
+const fmtDate = iso => {
+  const [,m,d] = iso.split('-');
+  return `${parseInt(d)} ${['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][+m]}`;
+};
+
+// ── State ──────────────────────────────────────────────────────────────────────
+let participants = [], pColors = {}, active = new Set(), txData = null;
+const charts = {};
+
+// ── Chart base options ─────────────────────────────────────────────────────────
+function baseOpts() {
+  return {
+    responsive: true,
+    maintainAspectRatio: false,
+    animation: { duration: 300 },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#1a1d27', borderColor: '#2e3247', borderWidth: 1,
+        titleColor: '#e2e4ef', bodyColor: '#a0a4b8', padding: 10,
+      }
+    },
+    scales: {
+      x: { ticks: { color: '#7b7f9a', font: { size: 11 } }, grid: { color: '#1e2132' } },
+      y: { ticks: { color: '#7b7f9a', font: { size: 11 }, callback: v => fmtM(v) }, grid: { color: '#1e2132' } }
+    }
+  };
 }
 
-function calcStats(transactions, participant) {
-  let income = 0, expense = 0;
-  const txs = transactions.filter(t => t.participant === participant);
-  for (const t of txs) {
-    if (t.balance_effect === '+') income += t.amount;
-    else expense += t.amount;
+// ── Data builders ──────────────────────────────────────────────────────────────
+function buildSaldo(transactions) {
+  const sorted = [...transactions].sort((a, b) => a.date.localeCompare(b.date));
+  const dates  = [...new Set(sorted.map(t => t.date))].sort();
+  const byDate = {};
+  for (const t of sorted) (byDate[t.date] ||= []).push(t);
+
+  const running = Object.fromEntries(participants.map(p => [p, INITIAL]));
+  const series  = Object.fromEntries(participants.map(p => [p, [INITIAL]]));
+  for (const date of dates) {
+    for (const t of (byDate[date] || []))
+      running[t.participant] += t.balance_effect === '+' ? t.amount : -t.amount;
+    for (const p of participants) series[p].push(running[p]);
   }
-  return { income, expense, balance: INITIAL_BALANCE + income - expense, txs };
+  return { labels: ['Inicio', ...dates.map(fmtDate)], series };
 }
 
+function buildPrimas(transactions) {
+  const primas = transactions.filter(t => t.type === 'Prima');
+  const rounds = [...new Set(primas.map(t => t.note))].sort();
+  if (!rounds.length) return null;
+  const series = Object.fromEntries(
+    participants.map(p => [p, rounds.map(r => {
+      const pt = primas.find(t => t.participant === p && t.note === r);
+      return pt ? pt.amount : 0;
+    })])
+  );
+  return { rounds, series };
+}
+
+function buildGastos(transactions) {
+  const sel   = participants.filter(p => active.has(p));
+  const types = ['Compra', 'Salario', 'Clausula', 'DepositoClausula'];
+  const totals = Object.fromEntries(sel.map(p => [p,
+    transactions.filter(t => t.participant === p && t.balance_effect === '-').reduce((s,t) => s+t.amount, 0)
+  ]));
+  const labels = sel.sort((a, b) => totals[b] - totals[a]);
+  const datasets = types.map(type => ({
+    label: EXPENSE_LABELS[type],
+    data: labels.map(p =>
+      transactions.filter(t => t.participant===p && t.type===type && t.balance_effect==='-')
+                  .reduce((s,t) => s+t.amount, 0)
+    ),
+    backgroundColor: EXPENSE_COLORS[type],
+    borderRadius: 3,
+    borderSkipped: false,
+  }));
+  return { labels, datasets };
+}
+
+// ── Render helpers ─────────────────────────────────────────────────────────────
+function calcStats(transactions, p) {
+  let inc = 0, exp = 0;
+  const txs = transactions.filter(t => t.participant === p);
+  for (const t of txs) t.balance_effect === '+' ? (inc += t.amount) : (exp += t.amount);
+  return { income: inc, expense: exp, balance: INITIAL + inc - exp, txs };
+}
+
+function renderConfig(config) {
+  const grid = document.getElementById('config-grid');
+  if (!config) { grid.innerHTML = '<div class="config-item"><div class="ci-label">No disponible</div></div>'; return; }
+  const m = config.mercado || {}, s = config.salarios || {}, cl = config.clausulas || {};
+  const p = config.primas || {}, pl = config.plantilla || {};
+  const pos = p.por_posicion_jornada || [];
+  const primaRange = pos.length ? `${fmtM(pos[0].importe)} – ${fmtM(pos.at(-1).importe)}` : '—';
+
+  const items = [
+    { label:'Saldo inicial',      value: fmt(INITIAL) },
+    { label:'Salario fijo',       value: `${fmtM(s.fijo_por_jugador||0)}/jugador`, note:'por jornada' },
+    { label:'Salario variable',   value: `${s.variable_pct||0}% plantilla`,        note:'por jornada' },
+    { label:'Primas jornada',     value: primaRange,                                note:'1ª → última posición' },
+    { label:'Cláusula',           value: `${cl.porcentaje_valor||0}% valor jugador` },
+    { label:'Bloqueo cláusula',   value: `${cl.horas_bloqueado_jornada||0}h`,      note:'durante jornada activa' },
+    { label:'Max en venta',       value: `${m.max_jugadores_en_venta||0} jugadores`, note:'por participante' },
+    { label:'Venta inmediata',    value: `${m.venta_inmediata_pct||0}% del valor` },
+    { label:'Plantilla máxima',   value: `${pl.tamano_maximo||0} jugadores` },
+    { label:'Max mismo club',     value: `${pl.max_jugadores_mismo_club||0} jugadores` },
+  ];
+  grid.innerHTML = items.map(i => `
+    <div class="config-item">
+      <div class="ci-label">${i.label}</div>
+      <div class="ci-value">${i.value}</div>
+      ${i.note ? `<div class="ci-note">${i.note}</div>` : ''}
+    </div>`).join('');
+}
+
+function renderRankings(transactions) {
+  const stats = participants.map(p => ({ p, ...calcStats(transactions, p) }));
+  stats.sort((a, b) => b.balance - a.balance);
+  const tbody = document.getElementById('rankings-body');
+  stats.forEach((s, i) => {
+    const pos = s.balance >= INITIAL;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="rank-num">${i+1}</td>
+      <td><span class="p-dot" style="background:${pColors[s.p]}"></span><span class="p-name">${s.p}</span></td>
+      <td class="${pos?'bal-pos':'bal-neg'}">${fmt(s.balance)}</td>
+      <td class="amt-pos">${fmt(s.income)}</td>
+      <td class="amt-neg">${fmt(s.expense)}</td>`;
+    tr.addEventListener('click', () => toggleCard(s.p));
+    tbody.appendChild(tr);
+  });
+}
+
+function renderSelector() {
+  const el = document.getElementById('p-selector');
+  participants.forEach(p => {
+    const t = document.createElement('div');
+    t.className = 'p-toggle';
+    t.dataset.p = p;
+    t.innerHTML = `<span class="dot" style="background:${pColors[p]}"></span>${p}`;
+    t.addEventListener('click', () => {
+      if (active.has(p)) {
+        if (active.size <= 1) return;
+        active.delete(p);
+        t.classList.add('off');
+      } else {
+        active.add(p);
+        t.classList.remove('off');
+      }
+      updateCharts();
+    });
+    el.appendChild(t);
+  });
+}
+
+// ── Charts ─────────────────────────────────────────────────────────────────────
+function initSaldo(transactions) {
+  const d = buildSaldo(transactions);
+  const opts = baseOpts();
+  opts.plugins.tooltip.mode = 'index';
+  opts.plugins.tooltip.intersect = false;
+  opts.plugins.tooltip.callbacks = { label: ctx => ` ${ctx.dataset.label}: ${fmt(ctx.raw)}` };
+  opts.scales.x.ticks.maxTicksLimit = 14;
+  opts.scales.y.ticks.callback = v => fmtM(v);
+
+  charts.saldo = new Chart(document.getElementById('chart-saldo'), {
+    type: 'line',
+    data: {
+      labels: d.labels,
+      datasets: participants.map(p => ({
+        label: p,
+        data: d.series[p],
+        borderColor: pColors[p],
+        backgroundColor: pColors[p] + '15',
+        borderWidth: 2,
+        pointRadius: 0,
+        pointHoverRadius: 5,
+        tension: 0.25,
+        fill: false,
+        hidden: !active.has(p),
+      }))
+    },
+    options: opts
+  });
+}
+
+function initPrimas(transactions) {
+  const d = buildPrimas(transactions);
+  const panel = document.getElementById('tab-primas');
+  if (!d) {
+    panel.innerHTML = '<div class="chart-empty">Sin datos de primas aún — aparecerán al finalizar la primera jornada.</div>';
+    return;
+  }
+  const opts = baseOpts();
+  opts.plugins.legend = { display: true, labels: { color: '#7b7f9a', boxWidth: 10, padding: 14, font: { size: 12 } } };
+  opts.plugins.tooltip.callbacks = { label: ctx => ` ${ctx.dataset.label}: ${fmt(ctx.raw)}` };
+
+  charts.primas = new Chart(document.getElementById('chart-primas'), {
+    type: 'bar',
+    data: {
+      labels: d.rounds,
+      datasets: participants.map(p => ({
+        label: p,
+        data: d.series[p],
+        backgroundColor: pColors[p] + 'cc',
+        borderColor: pColors[p],
+        borderWidth: 1,
+        borderRadius: 4,
+        hidden: !active.has(p),
+      }))
+    },
+    options: opts
+  });
+}
+
+function initGastos(transactions) {
+  const d = buildGastos(transactions);
+  const opts = baseOpts();
+  opts.scales.x.stacked = true;
+  opts.scales.y.stacked = true;
+  opts.plugins.legend = { display: true, labels: { color: '#7b7f9a', boxWidth: 10, padding: 14, font: { size: 12 } } };
+  opts.plugins.tooltip.callbacks = {
+    label: ctx => ctx.raw > 0 ? ` ${ctx.dataset.label}: ${fmt(ctx.raw)}` : null
+  };
+
+  charts.gastos = new Chart(document.getElementById('chart-gastos'), {
+    type: 'bar',
+    data: d,
+    options: opts
+  });
+}
+
+function updateCharts() {
+  if (charts.saldo) {
+    charts.saldo.data.datasets.forEach(ds => { ds.hidden = !active.has(ds.label); });
+    charts.saldo.update();
+  }
+  if (charts.primas) {
+    charts.primas.data.datasets.forEach(ds => { ds.hidden = !active.has(ds.label); });
+    charts.primas.update();
+  }
+  if (charts.gastos) {
+    const d = buildGastos(txData.transactions);
+    charts.gastos.data.labels = d.labels;
+    charts.gastos.data.datasets = d.datasets;
+    charts.gastos.update();
+  }
+}
+
+// ── Tab switching ──────────────────────────────────────────────────────────────
+document.getElementById('chart-tabs').addEventListener('click', e => {
+  const btn = e.target.closest('.ctab');
+  if (!btn) return;
+  const tab = btn.dataset.tab;
+  document.querySelectorAll('.ctab').forEach(b => b.classList.toggle('active', b === btn));
+  ['saldo','primas','gastos'].forEach(id => {
+    document.getElementById(`tab-${id}`).style.display = id === tab ? '' : 'none';
+  });
+  // Lazy init on first open
+  if (tab === 'primas' && !charts.primas) initPrimas(txData.transactions);
+  if (tab === 'gastos' && !charts.gastos) initGastos(txData.transactions);
+  if (charts[tab]) setTimeout(() => charts[tab].resize(), 10);
+});
+
+// ── Detail accordion ───────────────────────────────────────────────────────────
+function renderDetails(transactions) {
+  const stats = participants.map(p => ({ p, ...calcStats(transactions, p) }));
+  stats.sort((a, b) => b.balance - a.balance);
+  const grid = document.getElementById('detail-grid');
+
+  stats.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'p-card';
+    card.id = `card-${s.p.replace(/\W/g,'_')}`;
+    const isPos = s.balance >= INITIAL;
+    const txs = [...s.txs].sort((a, b) => b.date.localeCompare(a.date));
+
+    let rows = '', inc = 0, exp = 0;
+    for (const t of txs) {
+      const pos = t.balance_effect === '+';
+      pos ? (inc += t.amount) : (exp += t.amount);
+      rows += `<tr>
+        <td>${t.date}</td>
+        <td><span class="tx-type tx-${t.type}">${t.type}</span></td>
+        <td>${t.player || t.note || '—'}</td>
+        <td class="${pos?'amt-pos':'amt-neg'}">${pos?'+':'−'}${fmt(t.amount)}</td>
+      </tr>`;
+    }
+    rows += `<tr class="tx-total">
+      <td colspan="3">Neto operaciones</td>
+      <td class="${inc>=exp?'amt-pos':'amt-neg'}">${fmt(inc-exp)}</td>
+    </tr>`;
+
+    const head = document.createElement('div');
+    head.className = 'p-card-head';
+    head.innerHTML = `
+      <span class="pname"><span class="p-dot" style="background:${pColors[s.p]}"></span>${s.p}</span>
+      <div class="psummary">
+        <div class="stat-pill">
+          <span class="sp-label">Saldo</span>
+          <span class="sp-val ${isPos?'bal-pos':'bal-neg'}">${txs.length ? fmt(s.balance) : '—'}</span>
+        </div>
+        <div class="stat-pill">
+          <span class="sp-label">Operaciones</span>
+          <span class="sp-val">${txs.length}</span>
+        </div>
+        <span class="pchev">▼</span>
+      </div>`;
+    head.addEventListener('click', () => {
+      head.classList.toggle('open');
+      body.classList.toggle('open');
+    });
+
+    const body = document.createElement('div');
+    body.className = 'p-card-body';
+    body.innerHTML = txs.length
+      ? `<table class="tx-table"><thead><tr><th>Fecha</th><th>Tipo</th><th>Jugador / Detalle</th><th>Importe</th></tr></thead><tbody>${rows}</tbody></table>`
+      : '<p style="padding:16px;color:var(--muted)">Sin transacciones.</p>';
+
+    card.append(head, body);
+    grid.appendChild(card);
+  });
+}
+
+// ── Bootstrap ─────────────────────────────────────────────────────────────────
 async function load() {
-  let data;
+  let txns, config;
   try {
-    const res = await fetch('./transactions.json');
-    data = await res.json();
-  } catch (e) {
-    document.getElementById('meta-info').textContent = 'Error cargando transactions.json';
+    const [r1, r2] = await Promise.all([
+      fetch('./transactions.json'),
+      fetch('./league_config.json').catch(() => null)
+    ]);
+    txns   = await r1.json();
+    config = r2 ? await r2.json().catch(() => null) : null;
+  } catch(e) {
+    document.getElementById('meta-info').textContent = 'Error cargando datos';
     return;
   }
 
-  const { metadata, transactions } = data;
+  txData       = txns;
+  participants = txns.metadata.participants;
+  participants.forEach((p, i) => { pColors[p] = PALETTE[i % PALETTE.length]; });
+  active = new Set(participants);
 
-  // Meta info
-  const lastFetched = metadata.last_fetched || '?';
-  const lastUpdated = metadata.last_updated ? new Date(metadata.last_updated).toLocaleString('es-ES') : '?';
+  const updated = txns.metadata.last_updated
+    ? new Date(txns.metadata.last_updated).toLocaleString('es-ES') : '?';
   document.getElementById('meta-info').textContent =
-    `Última actualización: ${lastUpdated} · Datos hasta: ${lastFetched} · ${transactions.length} operaciones`;
+    `Actualizado: ${updated} · Datos hasta: ${txns.metadata.last_fetched||'?'} · ${txns.transactions.length} operaciones`;
 
-  // Warning if data is incomplete
-  const missingNote = (metadata.notes || []).find(n => n.includes('AVISO'));
-  if (missingNote) {
+  const aviso = (txns.metadata.notes||[]).find(n => n.startsWith('AVISO'));
+  if (aviso) {
     document.getElementById('warning-banner').style.display = 'flex';
-    document.getElementById('warning-text').textContent =
-      'Datos incompletos: ' + missingNote.replace('AVISO: ', '') + ' Los saldos mostrados son parciales.';
+    document.getElementById('warning-text').textContent = aviso.replace('AVISO: ','');
   }
 
-  // Compute stats per participant
-  const stats = metadata.participants.map(p => ({ participant: p, ...calcStats(transactions, p) }));
-  stats.sort((a, b) => b.balance - a.balance);
+  renderConfig(config);
+  renderRankings(txns.transactions);
+  renderSelector();
+  initSaldo(txns.transactions);
+  renderDetails(txns.transactions);
 
-  const maxAbsBalance = Math.max(...stats.map(s => Math.abs(s.balance - INITIAL_BALANCE)));
-
-  // Rankings table
-  const tbody = document.getElementById('rankings-body');
-  stats.forEach((s, i) => {
-    const isPos = s.balance >= INITIAL_BALANCE;
-    const delta = s.balance - INITIAL_BALANCE;
-    const pct = maxAbsBalance > 0 ? Math.abs(delta) / maxAbsBalance * 100 : 0;
-
-    const hasData = s.txs.length > 0;
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td class="rank-num">${i + 1}</td>
-      <td class="participant-name">
-        ${s.participant}
-        ${!hasData ? '<span class="incomplete-badge">sin datos</span>' : ''}
-      </td>
-      <td class="balance-cell ${hasData ? (isPos ? 'balance-pos' : 'balance-neg') : 'balance-na'}">
-        ${hasData ? fmt(s.balance) : '—'}
-      </td>
-      <td>
-        <div class="bar-container">
-          <div class="bar-fill ${isPos ? 'bar-pos' : 'bar-neg'}" style="width:${pct}%"></div>
-        </div>
-      </td>
-      <td class="amount-pos">${fmt(s.income)}</td>
-      <td class="amount-neg">${fmt(s.expense)}</td>
-      <td class="ops-count">${s.txs.length}</td>
-    `;
-    row.style.cursor = 'pointer';
-    row.addEventListener('click', () => toggleCard(s.participant));
-    tbody.appendChild(row);
-  });
-
-  // Detail cards
-  const grid = document.getElementById('detail-grid');
-  stats.forEach(s => {
-    const card = document.createElement('div');
-    card.className = 'participant-card';
-    card.id = `card-${s.participant.replace(/\s+/g,'_')}`;
-
-    const isPos = s.balance >= INITIAL_BALANCE;
-    const txsSorted = [...s.txs].sort((a, b) => b.date.localeCompare(a.date));
-
-    let txRows = '';
-    let totalIncome = 0, totalExpense = 0;
-    for (const t of txsSorted) {
-      const sign = t.balance_effect === '+' ? '+' : '−';
-      const amtClass = t.balance_effect === '+' ? 'amount-pos' : 'amount-neg';
-      if (t.balance_effect === '+') totalIncome += t.amount;
-      else totalExpense += t.amount;
-      txRows += `<tr>
-        <td>${t.date}</td>
-        <td><span class="tx-type tx-${t.type}">${t.type}</span></td>
-        <td>${t.player || '—'}</td>
-        <td class="${amtClass}">${sign}${fmt(t.amount)}</td>
-      </tr>`;
-    }
-    txRows += `<tr class="totals-row">
-      <td colspan="3">Neto (estas ops)</td>
-      <td class="${totalIncome >= totalExpense ? 'amount-pos' : 'amount-neg'}">${fmt(totalIncome - totalExpense)}</td>
-    </tr>`;
-
-    card.innerHTML = `
-      <div class="card-header" onclick="toggleCard('${s.participant}')">
-        <span class="name">${s.participant}</span>
-        <div class="summary">
-          <div class="stat-pill">
-            <span class="label">Saldo calculado</span>
-            <span class="value ${isPos ? 'balance-pos' : 'balance-neg'}">${s.txs.length > 0 ? fmt(s.balance) : '—'}</span>
-          </div>
-          <div class="stat-pill">
-            <span class="label">Operaciones</span>
-            <span class="value">${s.txs.length}</span>
-          </div>
-          <span class="chevron">▼</span>
-        </div>
-      </div>
-      <div class="card-body">
-        ${s.txs.length === 0
-          ? '<p style="padding:16px;color:var(--muted)">Sin transacciones registradas en el período actual.</p>'
-          : `<table class="tx-table">
-              <thead><tr><th>Fecha</th><th>Tipo</th><th>Jugador</th><th>Importe</th></tr></thead>
-              <tbody>${txRows}</tbody>
-            </table>`
-        }
-      </div>
-    `;
-    grid.appendChild(card);
-  });
-
-  // Footer
   document.getElementById('footer').textContent =
-    `Saldo inicial por participante: ${fmt(INITIAL_BALANCE)} · Datos del feed de Biwenger · Actualizado: ${lastUpdated}`;
+    `Saldo inicial: ${fmt(INITIAL)} · Actualizado: ${updated}`;
 }
 
-function toggleCard(participant) {
-  const id = `card-${participant.replace(/\s+/g,'_')}`;
-  const card = document.getElementById(id);
+function toggleCard(p) {
+  const card = document.getElementById(`card-${p.replace(/\W/g,'_')}`);
   if (!card) return;
-  const header = card.querySelector('.card-header');
-  const body = card.querySelector('.card-body');
-  header.classList.toggle('open');
-  body.classList.toggle('open');
+  card.querySelector('.p-card-head').classList.toggle('open');
+  card.querySelector('.p-card-body').classList.toggle('open');
 }
 
 load();
