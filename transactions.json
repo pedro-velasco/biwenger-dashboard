@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-08-27T17:36:35.148Z",
+    "last_updated": "2026-08-27T21:43:36.871Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
@@ -69,6 +69,24 @@
       "amount": 2199000,
       "participant": "Victor Sanchez",
       "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-27",
+      "type": "Compra",
+      "player": "Germán Parreño",
+      "amount": 225000,
+      "participant": "Cristian",
+      "balance_effect": "-",
+      "note": "Comprado a Pedro"
+    },
+    {
+      "date": "2026-08-27",
+      "type": "Compra",
+      "player": "Dani Martín",
+      "amount": 225000,
+      "participant": "Cristian",
+      "balance_effect": "-",
+      "note": "Comprado a Pedro"
     },
     {
       "date": "2026-08-26",
