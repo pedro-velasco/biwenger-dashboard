@@ -12,16 +12,64 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-08-26T07:07:16.689Z",
+    "last_updated": "2026-08-27T08:22:25.497Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-08-26"
+    "last_fetched": "2026-08-27"
   },
   "transactions": [
+    {
+      "date": "2026-08-27",
+      "type": "Venta",
+      "player": "Courtois",
+      "amount": 7225800,
+      "participant": "Cristian",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-27",
+      "type": "Venta",
+      "player": "Germán Parreño",
+      "amount": 225000,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-27",
+      "type": "Venta",
+      "player": "Dani Martín",
+      "amount": 225000,
+      "participant": "Pedro",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-27",
+      "type": "Venta",
+      "player": "Aimar Oroz",
+      "amount": 4107800,
+      "participant": "Víctor Peña",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-08-27",
+      "type": "Compra",
+      "player": "Bartra",
+      "amount": 2999000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-27",
+      "type": "Compra",
+      "player": "Chust",
+      "amount": 2199000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-08-26",
       "type": "Venta",
@@ -61,6 +109,24 @@
       "amount": 11794690,
       "participant": "carlos Heredia",
       "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Clausula",
+      "player": "Herrando",
+      "amount": 540000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de Victor Ramos"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Clausula",
+      "player": "Herrando",
+      "amount": 540000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a Cristian"
     },
     {
       "date": "2026-08-25",
