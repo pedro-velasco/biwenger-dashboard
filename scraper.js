@@ -191,7 +191,7 @@ async function getPlayerNames() {
  * item.type === 'transfer', c.type === 'clause', c.from = seller → Clausula received (+)
  * item.type === 'transfer', c.type === 'clause', c.to   = buyer  → Clausula paid (-)
  * item.type === 'roundFinished', results[].bonus > 0 → Prima (bonus, balance +)
- * item.type === 'roundFinished', results[].salary > 0 → Salario (cost, balance -)
+ * item.type === 'salaries', content[].amount      → Salario (cost, balance -) — one item per jornada, all participants
  */
 function boardItemToTransactions(item, playerNames, todayISO) {
   const date = new Date(item.date * 1000).toISOString().slice(0, 10);
@@ -294,15 +294,20 @@ function boardItemToTransactions(item, playerNames, todayISO) {
           note: round
         });
       }
-      if (r.salary) {
-        txs.push({
-          date, type: 'Salario', player: null,
-          amount: r.salary,
-          participant: r.user.name,
-          balance_effect: '-',
-          note: round
-        });
-      }
+    }
+    return txs;
+  }
+
+  // Salaries are a separate board item type (one per jornada, all participants)
+  if (item.type === 'salaries') {
+    for (const c of item.content) {
+      if (!c.user || !c.amount) continue;
+      txs.push({
+        date, type: 'Salario', player: null,
+        amount: c.amount,
+        participant: c.user.name,
+        balance_effect: '-'
+      });
     }
     return txs;
   }
