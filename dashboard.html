@@ -35,6 +35,7 @@ h2 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacin
 .config-item .ci-note { font-size: 11px; color: var(--muted); margin-top: 1px; }
 
 /* ── Rankings ── */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .rankings { width: 100%; border-collapse: collapse; }
 .rankings th { text-align: left; padding: 8px 12px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); border-bottom: 1px solid var(--border); }
 .rankings td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
@@ -42,21 +43,20 @@ h2 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacin
 .rankings tr:hover td { background: var(--bg3); cursor: pointer; }
 .rank-num { font-weight: 700; color: var(--muted); width: 28px; }
 .p-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 8px; flex-shrink: 0; }
-.p-name { font-weight: 600; }
-.bal-pos { color: var(--green); font-weight: 700; font-size: 15px; }
-.bal-neg { color: var(--red); font-weight: 700; font-size: 15px; }
+.p-name { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 140px; }
+.bal { font-weight: 700; font-size: 15px; }
 .amt-pos { color: var(--green); }
 .amt-neg { color: var(--red); }
 
 /* ── Participant selector ── */
 .p-selector { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
-.p-toggle { display: flex; align-items: center; gap: 7px; padding: 6px 12px; border-radius: 20px; border: 1px solid var(--border); background: var(--bg2); cursor: pointer; font-size: 13px; transition: opacity .15s, border-color .15s; user-select: none; }
+.p-toggle { display: flex; align-items: center; gap: 7px; padding: 6px 12px; min-height: 44px; border-radius: 20px; border: 1px solid var(--border); background: var(--bg2); cursor: pointer; font-size: 13px; transition: opacity .15s, border-color .15s; user-select: none; }
 .p-toggle:hover { border-color: var(--muted); }
 .p-toggle.off { opacity: 0.3; }
 .p-toggle .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
 /* ── Chart tabs ── */
-.chart-tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--border); margin-bottom: 16px; }
+.chart-tabs { display: flex; flex-wrap: wrap; gap: 2px; border-bottom: 1px solid var(--border); margin-bottom: 16px; }
 .ctab { padding: 8px 16px; font-size: 13px; font-weight: 500; color: var(--muted); cursor: pointer; background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color .15s, border-color .15s; }
 .ctab:hover { color: var(--text); }
 .ctab.active { color: var(--text); border-bottom-color: var(--accent); }
@@ -68,10 +68,10 @@ h2 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacin
 /* ── Detail accordion ── */
 .detail-grid { display: grid; gap: 10px; }
 .p-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-.p-card-head { padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; }
+.p-card-head { padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; cursor: pointer; user-select: none; }
 .p-card-head:hover { background: var(--bg3); }
-.p-card-head .pname { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; }
-.p-card-head .psummary { display: flex; gap: 20px; align-items: center; }
+.p-card-head .pname { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 160px; }
+.p-card-head .psummary { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
 .p-card-head .pchev { color: var(--muted); font-size: 12px; transition: transform .2s; }
 .p-card-head.open .pchev { transform: rotate(180deg); }
 .stat-pill { display: flex; flex-direction: column; align-items: flex-end; }
@@ -94,9 +94,13 @@ h2 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacin
 
 footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); margin-top: 32px; }
 
+@media (max-width: 768px) {
+  main { padding: 16px 10px; }
+  .p-card-head .psummary { gap: 10px; }
+}
 @media (max-width: 640px) {
   .config-grid { grid-template-columns: 1fr 1fr; }
-  .p-card-head .psummary { gap: 10px; }
+  .chart-panel { height: 260px; }
   .tx-table th:nth-child(3), .tx-table td:nth-child(3) { display: none; }
   .rankings th:nth-child(4), .rankings td:nth-child(4),
   .rankings th:nth-child(5), .rankings td:nth-child(5) { display: none; }
@@ -123,12 +127,14 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
   </details>
 
   <h2>Clasificación Financiera</h2>
+  <div class="table-scroll">
   <table class="rankings">
     <thead><tr>
       <th>#</th><th>Participante</th><th>Saldo</th><th>Ingresos</th><th>Gastos</th>
     </tr></thead>
     <tbody id="rankings-body"></tbody>
   </table>
+  </div>
 
   <h2>Análisis</h2>
   <div class="p-selector" id="p-selector"></div>
@@ -165,6 +171,13 @@ const EXPENSE_LABELS = {
   'Compra': 'Compras', 'Salario': 'Salarios',
   'Clausula': 'Cláusulas', 'DepositoClausula': 'Depósitos cláusula',
 };
+
+// ── Saldo color semáforo ───────────────────────────────────────────────────────
+function saldoColor(saldo) {
+  if (saldo < 0)       return '#f87171'; // rojo
+  if (saldo <= 200000) return '#fb923c'; // naranja
+  return '#4ade80';                      // verde
+}
 
 // ── Formatters ─────────────────────────────────────────────────────────────────
 const fmt  = n => new Intl.NumberFormat('es-ES', { style:'currency', currency:'EUR', maximumFractionDigits:0 }).format(n);
@@ -294,12 +307,11 @@ function renderRankings(transactions) {
   stats.sort((a, b) => b.balance - a.balance);
   const tbody = document.getElementById('rankings-body');
   stats.forEach((s, i) => {
-    const pos = s.balance >= INITIAL;
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td class="rank-num">${i+1}</td>
       <td><span class="p-dot" style="background:${pColors[s.p]}"></span><span class="p-name">${s.p}</span></td>
-      <td class="${pos?'bal-pos':'bal-neg'}">${fmt(s.balance)}</td>
+      <td class="bal" style="color:${saldoColor(s.balance)}">${fmt(s.balance)}</td>
       <td class="amt-pos">${fmt(s.income)}</td>
       <td class="amt-neg">${fmt(s.expense)}</td>`;
     tr.addEventListener('click', () => toggleCard(s.p));
@@ -448,7 +460,7 @@ function renderDetails(transactions) {
     const card = document.createElement('div');
     card.className = 'p-card';
     card.id = `card-${s.p.replace(/\W/g,'_')}`;
-    const isPos = s.balance >= INITIAL;
+    const isPos = s.balance >= INITIAL; // kept for reference
     const txs = [...s.txs].sort((a, b) => b.date.localeCompare(a.date));
 
     let rows = '', inc = 0, exp = 0;
@@ -474,7 +486,7 @@ function renderDetails(transactions) {
       <div class="psummary">
         <div class="stat-pill">
           <span class="sp-label">Saldo</span>
-          <span class="sp-val ${isPos?'bal-pos':'bal-neg'}">${txs.length ? fmt(s.balance) : '—'}</span>
+          <span class="sp-val" style="color:${saldoColor(s.balance)}">${txs.length ? fmt(s.balance) : '—'}</span>
         </div>
         <div class="stat-pill">
           <span class="sp-label">Operaciones</span>
@@ -490,7 +502,7 @@ function renderDetails(transactions) {
     const body = document.createElement('div');
     body.className = 'p-card-body';
     body.innerHTML = txs.length
-      ? `<table class="tx-table"><thead><tr><th>Fecha</th><th>Tipo</th><th>Jugador / Detalle</th><th>Importe</th></tr></thead><tbody>${rows}</tbody></table>`
+      ? `<div class="table-scroll"><table class="tx-table"><thead><tr><th>Fecha</th><th>Tipo</th><th>Jugador / Detalle</th><th>Importe</th></tr></thead><tbody>${rows}</tbody></table></div>`
       : '<p style="padding:16px;color:var(--muted)">Sin transacciones.</p>';
 
     card.append(head, body);
