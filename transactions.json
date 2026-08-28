@@ -12,16 +12,222 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-08-27T21:55:37.307Z",
+    "last_updated": "2026-08-28T10:28:10.015Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-08-27"
+    "last_fetched": "2026-08-28"
   },
   "transactions": [
+    {
+      "date": "2026-08-28",
+      "type": "Salario",
+      "player": null,
+      "amount": 567800,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Salario",
+      "player": null,
+      "amount": 566800,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Salario",
+      "player": null,
+      "amount": 563900,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Salario",
+      "player": null,
+      "amount": 559900,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Salario",
+      "player": null,
+      "amount": 545000,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Salario",
+      "player": null,
+      "amount": 538300,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Salario",
+      "player": null,
+      "amount": 462800,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Prima",
+      "player": null,
+      "amount": 850000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Jornada 1 (aplazada)"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Prima",
+      "player": null,
+      "amount": 1000000,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Jornada 1 (aplazada)"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Prima",
+      "player": null,
+      "amount": 1200000,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Jornada 1 (aplazada)"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Prima",
+      "player": null,
+      "amount": 1150000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Jornada 1 (aplazada)"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Prima",
+      "player": null,
+      "amount": 1300000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Jornada 1 (aplazada)"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Prima",
+      "player": null,
+      "amount": 1400000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Jornada 1 (aplazada)"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Prima",
+      "player": null,
+      "amount": 1550000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Jornada 1 (aplazada)"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Venta",
+      "player": "De Galarreta",
+      "amount": 2852600,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Venta",
+      "player": "Mantilla",
+      "amount": 1454000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Venta",
+      "player": "Fer Niño",
+      "amount": 2758600,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Venta",
+      "player": "Carlos Álvarez",
+      "amount": 3076400,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Venta",
+      "player": "Nsongo",
+      "amount": 2847500,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Venta",
+      "player": "Bartra",
+      "amount": 2910000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a Víctor Peña"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Compra",
+      "player": "Bartra",
+      "amount": 2910000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-",
+      "note": "Comprado a Victor Sanchez"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Compra",
+      "player": "Fran González",
+      "amount": 273770,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Compra",
+      "player": "Dotor",
+      "amount": 3401000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Compra",
+      "player": "Iago Aspas",
+      "amount": 2501000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-08-27",
       "type": "Venta",
