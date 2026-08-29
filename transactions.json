@@ -12,16 +12,65 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-08-28T18:38:43.196Z",
+    "last_updated": "2026-08-29T07:43:49.226Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-08-28"
+    "last_fetched": "2026-08-29"
   },
   "transactions": [
+    {
+      "date": "2026-08-29",
+      "type": "Venta",
+      "player": "Germán Valera",
+      "amount": 6337100,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-29",
+      "type": "Compra",
+      "player": "Pellegrini",
+      "amount": 2390000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-29",
+      "type": "Compra",
+      "player": "Remiro",
+      "amount": 6171010,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-29",
+      "type": "Compra",
+      "player": "Mojica",
+      "amount": 3205000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-29",
+      "type": "Compra",
+      "player": "Valentín Gómez",
+      "amount": 465000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-29",
+      "type": "Compra",
+      "player": "Hansi Flick",
+      "amount": 4950000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-08-28",
       "type": "Salario",
