@@ -12,16 +12,76 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-08-29T12:39:56.436Z",
+    "last_updated": "2026-08-30T07:30:18.984Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-08-29"
+    "last_fetched": "2026-08-30"
   },
   "transactions": [
+    {
+      "date": "2026-08-30",
+      "type": "Venta",
+      "player": "Germán Parreño",
+      "amount": 146100,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-30",
+      "type": "Venta",
+      "player": "Dani Martín",
+      "amount": 146200,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-30",
+      "type": "Venta",
+      "player": "Starfelt",
+      "amount": 2091100,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-30",
+      "type": "Venta",
+      "player": "Andrés Martín",
+      "amount": 5852000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-30",
+      "type": "Compra",
+      "player": "Miguel Román",
+      "amount": 3790000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-30",
+      "type": "Compra",
+      "player": "Eric García",
+      "amount": 8270000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-30",
+      "type": "Compra",
+      "player": "Pedri",
+      "amount": 15620000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-08-29",
       "type": "Venta",
