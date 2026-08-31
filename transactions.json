@@ -12,16 +12,85 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-08-30T11:51:58.097Z",
+    "last_updated": "2026-08-31T07:38:05.696Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-08-30"
+    "last_fetched": "2026-08-31"
   },
   "transactions": [
+    {
+      "date": "2026-08-31",
+      "type": "Venta",
+      "player": "Guridi",
+      "amount": 3159600,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-31",
+      "type": "Venta",
+      "player": "Carlos Maciá",
+      "amount": 1026300,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-31",
+      "type": "Venta",
+      "player": "Nico Guillén",
+      "amount": 1019300,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-31",
+      "type": "Venta",
+      "player": "Guido Rodríguez",
+      "amount": 4864300,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-31",
+      "type": "Venta",
+      "player": "Guruzeta",
+      "amount": 3651200,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-08-31",
+      "type": "Compra",
+      "player": "Ville Koski",
+      "amount": 1660000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-31",
+      "type": "Compra",
+      "player": "Juan Arana",
+      "amount": 380010,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-08-31",
+      "type": "Compra",
+      "player": "Simeone",
+      "amount": 2950000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-08-30",
       "type": "Venta",
