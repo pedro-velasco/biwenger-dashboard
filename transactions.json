@@ -12,16 +12,49 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-01T20:01:08.917Z",
+    "last_updated": "2026-09-02T07:11:45.188Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-01"
+    "last_fetched": "2026-09-02"
   },
   "transactions": [
+    {
+      "date": "2026-09-02",
+      "type": "Venta",
+      "player": "Satriano",
+      "amount": 3815500,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "Compra",
+      "player": "Yassir Zabiri",
+      "amount": 3981440,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "Compra",
+      "player": "Barrenetxea",
+      "amount": 4072770,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "Compra",
+      "player": "Fran Pérez",
+      "amount": 400460,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-09-01",
       "type": "Venta",
