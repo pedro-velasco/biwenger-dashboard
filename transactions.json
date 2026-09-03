@@ -12,16 +12,130 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-02T11:14:23.132Z",
+    "last_updated": "2026-09-03T07:20:59.550Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-02"
+    "last_fetched": "2026-09-03"
   },
   "transactions": [
+    {
+      "date": "2026-09-03",
+      "type": "Venta",
+      "player": "Herrando",
+      "amount": 484800,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Venta",
+      "player": "Eddahchouri",
+      "amount": 527700,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Venta",
+      "player": "Yamal",
+      "amount": 20995200,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Venta",
+      "player": "Eric García",
+      "amount": 8278000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Venta",
+      "player": "Simeone",
+      "amount": 3074700,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Venta",
+      "player": "Unai Simón",
+      "amount": 4876700,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Venta",
+      "player": "Lookman",
+      "amount": 7982100,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Venta",
+      "player": "Hansi Flick",
+      "amount": 5139400,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Venta",
+      "player": "Bartra",
+      "amount": 3310000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a Cristian"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Compra",
+      "player": "Bartra",
+      "amount": 3310000,
+      "participant": "Cristian",
+      "balance_effect": "-",
+      "note": "Comprado a Víctor Peña"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Compra",
+      "player": "Copete",
+      "amount": 150000,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Compra",
+      "player": "Osambela",
+      "amount": 155000,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "Compra",
+      "player": "Óscar Valentín",
+      "amount": 1663240,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-09-02",
       "type": "Venta",
