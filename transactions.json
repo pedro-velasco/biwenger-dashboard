@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-04T05:44:05.500Z",
+    "last_updated": "2026-09-04T11:14:25.037Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
@@ -63,6 +63,15 @@
       "amount": 3099000,
       "participant": "Victor Sanchez",
       "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-04",
+      "type": "Prima",
+      "player": null,
+      "amount": 100000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Jornada 6"
     },
     {
       "date": "2026-09-03",
