@@ -12,16 +12,24 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-05T22:32:45.523Z",
+    "last_updated": "2026-09-06T08:40:47.964Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-05"
+    "last_fetched": "2026-09-06"
   },
   "transactions": [
+    {
+      "date": "2026-09-06",
+      "type": "Compra",
+      "player": "Oriol Rey",
+      "amount": 1041000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-09-05",
       "type": "Compra",
