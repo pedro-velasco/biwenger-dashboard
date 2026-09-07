@@ -12,16 +12,94 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-06T10:52:41.210Z",
+    "last_updated": "2026-09-07T05:38:10.832Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-06"
+    "last_fetched": "2026-09-07"
   },
   "transactions": [
+    {
+      "date": "2026-09-07",
+      "type": "Venta",
+      "player": "Larrubia",
+      "amount": 5288500,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "Venta",
+      "player": "Óscar Valentín",
+      "amount": 1633600,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "Venta",
+      "player": "Fran González",
+      "amount": 266900,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "Venta",
+      "player": "Nteka",
+      "amount": 474700,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "Venta",
+      "player": "Aihen",
+      "amount": 246300,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "Venta",
+      "player": "Iñaki Williams",
+      "amount": 3454200,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "Compra",
+      "player": "Mandi",
+      "amount": 2721000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "Compra",
+      "player": "Iván Martín",
+      "amount": 3510060,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "Compra",
+      "player": "Germán Parreño",
+      "amount": 153580,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-09-06",
       "type": "Compra",
