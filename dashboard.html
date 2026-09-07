@@ -126,15 +126,8 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
     <div class="config-grid" id="config-grid"></div>
   </details>
 
-  <h2>Clasificación Financiera</h2>
-  <div class="table-scroll">
-  <table class="rankings">
-    <thead><tr>
-      <th>#</th><th>Participante</th><th>Saldo</th><th>Ingresos</th><th>Gastos</th>
-    </tr></thead>
-    <tbody id="rankings-body"></tbody>
-  </table>
-  </div>
+  <h2>Detalle por participante</h2>
+  <div class="detail-grid" id="detail-grid"></div>
 
   <h2>Análisis</h2>
   <div class="p-selector" id="p-selector"></div>
@@ -147,9 +140,6 @@ footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px
   <div id="tab-saldo" class="chart-panel"><canvas id="chart-saldo"></canvas></div>
   <div id="tab-primas" class="chart-panel" style="display:none"><canvas id="chart-primas"></canvas></div>
   <div id="tab-gastos" class="chart-panel" style="display:none"><canvas id="chart-gastos"></canvas></div>
-
-  <h2>Detalle por participante</h2>
-  <div class="detail-grid" id="detail-grid"></div>
 
 </main>
 
@@ -542,7 +532,6 @@ async function load() {
   }
 
   renderConfig(config);
-  renderRankings(txns.transactions);
   renderSelector();
   initSaldo(txns.transactions);
   renderDetails(txns.transactions);

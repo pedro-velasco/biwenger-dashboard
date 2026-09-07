@@ -1,8 +1,6 @@
 name: Scrape Biwenger feed
 
 on:
-  schedule:
-    - cron: '10 6 * * *'   # 6:10 UTC = 7:10 hora española (invierno) / 8:10 (verano)
   workflow_dispatch:         # ejecución manual desde la UI de GitHub
 
 jobs:
