@@ -12,16 +12,161 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-07T12:26:31.249Z",
+    "last_updated": "2026-09-08T16:12:12.269Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-07"
+    "last_fetched": "2026-09-08"
   },
   "transactions": [
+    {
+      "date": "2026-09-08",
+      "type": "Salario",
+      "player": null,
+      "amount": 665100,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Salario",
+      "player": null,
+      "amount": 649900,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Salario",
+      "player": null,
+      "amount": 630100,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Salario",
+      "player": null,
+      "amount": 599200,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Salario",
+      "player": null,
+      "amount": 592600,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Salario",
+      "player": null,
+      "amount": 526400,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Salario",
+      "player": null,
+      "amount": 522200,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Prima",
+      "player": null,
+      "amount": 950000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Jornada 4"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Prima",
+      "player": null,
+      "amount": 1100000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Jornada 4"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Prima",
+      "player": null,
+      "amount": 1050000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Jornada 4"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Prima",
+      "player": null,
+      "amount": 1200000,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Jornada 4"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Prima",
+      "player": null,
+      "amount": 1250000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Jornada 4"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Prima",
+      "player": null,
+      "amount": 1500000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Jornada 4"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Prima",
+      "player": null,
+      "amount": 1550000,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Jornada 4"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Venta",
+      "player": "Marcos Llorente",
+      "amount": 5895900,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Venta",
+      "player": "Francho",
+      "amount": 961100,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "Compra",
+      "player": "Agirrezabala",
+      "amount": 3212070,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-09-07",
       "type": "Venta",
