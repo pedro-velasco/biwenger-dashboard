@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-10T05:43:02.931Z",
+    "last_updated": "2026-09-10T20:37:02.356Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
@@ -55,6 +55,24 @@
       "amount": 634440,
       "participant": "Pedro",
       "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-10",
+      "type": "Clausula",
+      "player": "Boyé",
+      "amount": 8040000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de Pedro"
+    },
+    {
+      "date": "2026-09-10",
+      "type": "Clausula",
+      "player": "Boyé",
+      "amount": 8040000,
+      "participant": "Pedro",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a Victor Ramos"
     },
     {
       "date": "2026-09-09",
