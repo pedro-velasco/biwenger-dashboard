@@ -12,16 +12,41 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-11T06:10:28.010Z",
+    "last_updated": "2026-09-12T14:57:05.138Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-11"
+    "last_fetched": "2026-09-12"
   },
   "transactions": [
+    {
+      "date": "2026-09-12",
+      "type": "DepositoClausula",
+      "player": "Zabiri",
+      "amount": 1000000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-",
+      "note": "Nueva cláusula: 8.962.880 €"
+    },
+    {
+      "date": "2026-09-12",
+      "type": "Compra",
+      "player": "Expósito",
+      "amount": 5263100,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-12",
+      "type": "Compra",
+      "player": "Ez Abde",
+      "amount": 7495750,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-09-11",
       "type": "Venta",
