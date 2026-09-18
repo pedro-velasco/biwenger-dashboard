@@ -12,16 +12,79 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-17T21:29:04.323Z",
+    "last_updated": "2026-09-18T16:59:02.021Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-17"
+    "last_fetched": "2026-09-18"
   },
   "transactions": [
+    {
+      "date": "2026-09-18",
+      "type": "Prima",
+      "player": null,
+      "amount": 200000,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-09-18",
+      "type": "Prima",
+      "player": null,
+      "amount": 150000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-09-18",
+      "type": "Prima",
+      "player": null,
+      "amount": 50000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-09-18",
+      "type": "Prima",
+      "player": null,
+      "amount": 100000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-09-18",
+      "type": "Prima",
+      "player": null,
+      "amount": 100000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-09-18",
+      "type": "Prima",
+      "player": null,
+      "amount": 150000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-09-18",
+      "type": "Venta",
+      "player": "Starfelt",
+      "amount": 2073300,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
     {
       "date": "2026-09-17",
       "type": "Venta",
