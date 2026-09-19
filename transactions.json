@@ -12,16 +12,66 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-18T16:59:02.021Z",
+    "last_updated": "2026-09-19T21:54:31.454Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-18"
+    "last_fetched": "2026-09-19"
   },
   "transactions": [
+    {
+      "date": "2026-09-19",
+      "type": "Venta",
+      "player": "Arguibide",
+      "amount": 2045700,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-19",
+      "type": "Venta",
+      "player": "Sergio Herrera",
+      "amount": 3702800,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-19",
+      "type": "Compra",
+      "player": "Castrín",
+      "amount": 2201650,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-19",
+      "type": "Compra",
+      "player": "Cristian Romero",
+      "amount": 5577000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-19",
+      "type": "Compra",
+      "player": "Akhomach",
+      "amount": 685000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-19",
+      "type": "Compra",
+      "player": "Firpo",
+      "amount": 233560,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-09-18",
       "type": "Prima",
