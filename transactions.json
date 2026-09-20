@@ -12,16 +12,61 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-19T21:54:31.454Z",
+    "last_updated": "2026-09-20T20:44:24.112Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-19"
+    "last_fetched": "2026-09-20"
   },
   "transactions": [
+    {
+      "date": "2026-09-20",
+      "type": "Clausula",
+      "player": "Camello",
+      "amount": 16307440,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de Victor Ramos"
+    },
+    {
+      "date": "2026-09-20",
+      "type": "Clausula",
+      "player": "Camello",
+      "amount": 16307440,
+      "participant": "Victor Ramos",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a Cristian"
+    },
+    {
+      "date": "2026-09-20",
+      "type": "Clausula",
+      "player": "Akhomach",
+      "amount": 1420000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de Victor Ramos"
+    },
+    {
+      "date": "2026-09-20",
+      "type": "Clausula",
+      "player": "Akhomach",
+      "amount": 1420000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a Víctor Peña"
+    },
+    {
+      "date": "2026-09-20",
+      "type": "Venta",
+      "player": "Bretones",
+      "amount": 1429300,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
     {
       "date": "2026-09-19",
       "type": "Venta",
