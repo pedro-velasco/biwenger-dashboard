@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-21T05:25:04.415Z",
+    "last_updated": "2026-09-21T15:59:24.117Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
@@ -99,6 +99,125 @@
       "amount": 1630000,
       "participant": "Cristian",
       "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Salario",
+      "player": null,
+      "amount": 645300,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Salario",
+      "player": null,
+      "amount": 614400,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Salario",
+      "player": null,
+      "amount": 594000,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Salario",
+      "player": null,
+      "amount": 591800,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Salario",
+      "player": null,
+      "amount": 590800,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Salario",
+      "player": null,
+      "amount": 590600,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Salario",
+      "player": null,
+      "amount": 549300,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Prima",
+      "player": null,
+      "amount": 900000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Jornada 7"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Prima",
+      "player": null,
+      "amount": 950000,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Jornada 7"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Prima",
+      "player": null,
+      "amount": 1100000,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Jornada 7"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Prima",
+      "player": null,
+      "amount": 1150000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Jornada 7"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Prima",
+      "player": null,
+      "amount": 1250000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Jornada 7"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Prima",
+      "player": null,
+      "amount": 1400000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Jornada 7"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Prima",
+      "player": null,
+      "amount": 1550000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Jornada 7"
     },
     {
       "date": "2026-09-20",
