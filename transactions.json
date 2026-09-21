@@ -12,16 +12,94 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-20T21:23:24.657Z",
+    "last_updated": "2026-09-21T05:25:04.415Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-20"
+    "last_fetched": "2026-09-21"
   },
   "transactions": [
+    {
+      "date": "2026-09-21",
+      "type": "Venta",
+      "player": "Álvaro Carreras",
+      "amount": 1409900,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Venta",
+      "player": "Pubill",
+      "amount": 5819700,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Venta",
+      "player": "Pépé",
+      "amount": 11511600,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Venta",
+      "player": "Gerenabarrena",
+      "amount": 3297200,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Venta",
+      "player": "Pablo Ramón",
+      "amount": 2353000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Venta",
+      "player": "Christensen",
+      "amount": 1258000,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Compra",
+      "player": "Carlos López",
+      "amount": 150000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Compra",
+      "player": "Robert Navarro",
+      "amount": 4230000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "Compra",
+      "player": "Revivo",
+      "amount": 1630000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-09-20",
       "type": "Clausula",
