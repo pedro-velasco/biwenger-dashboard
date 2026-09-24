@@ -12,16 +12,68 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-23T05:12:16.113Z",
+    "last_updated": "2026-09-24T05:52:28.478Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-23"
+    "last_fetched": "2026-09-24"
   },
   "transactions": [
+    {
+      "date": "2026-09-24",
+      "type": "Venta",
+      "player": "Mandi",
+      "amount": 2766900,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-24",
+      "type": "Venta",
+      "player": "Víctor García",
+      "amount": 828100,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-24",
+      "type": "Venta",
+      "player": "Arnau Ortiz",
+      "amount": 455700,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-24",
+      "type": "Venta",
+      "player": "Tsitaishvili",
+      "amount": 839800,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-24",
+      "type": "Compra",
+      "player": "Cucho",
+      "amount": 5601000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-24",
+      "type": "Compra",
+      "player": "Yamal",
+      "amount": 25539060,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-09-23",
       "type": "Venta",
