@@ -12,16 +12,96 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-28T09:52:41.779Z",
+    "last_updated": "2026-09-29T05:39:45.740Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-28"
+    "last_fetched": "2026-09-29"
   },
   "transactions": [
+    {
+      "date": "2026-09-29",
+      "type": "Venta",
+      "player": "Pedri",
+      "amount": 16846900,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-29",
+      "type": "Venta",
+      "player": "Remiro",
+      "amount": 4343600,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-09-29",
+      "type": "Venta",
+      "player": "Barrios",
+      "amount": 6895000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a Víctor Peña"
+    },
+    {
+      "date": "2026-09-29",
+      "type": "Compra",
+      "player": "Barrios",
+      "amount": 6895000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-",
+      "note": "Comprado a Cristian"
+    },
+    {
+      "date": "2026-09-29",
+      "type": "Venta",
+      "player": "Alfonso Herrero",
+      "amount": 4605000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a Víctor Peña"
+    },
+    {
+      "date": "2026-09-29",
+      "type": "Compra",
+      "player": "Alfonso Herrero",
+      "amount": 4605000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-",
+      "note": "Comprado a Cristian"
+    },
+    {
+      "date": "2026-09-29",
+      "type": "Venta",
+      "player": "Livakovic",
+      "amount": 770700,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a Cristian"
+    },
+    {
+      "date": "2026-09-29",
+      "type": "Compra",
+      "player": "Livakovic",
+      "amount": 770700,
+      "participant": "Cristian",
+      "balance_effect": "-",
+      "note": "Comprado a Víctor Peña"
+    },
+    {
+      "date": "2026-09-29",
+      "type": "Compra",
+      "player": "Maffeo",
+      "amount": 1520100,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-09-28",
       "type": "Compra",
