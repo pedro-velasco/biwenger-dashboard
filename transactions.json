@@ -12,16 +12,67 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-09-29T05:39:45.740Z",
+    "last_updated": "2026-10-01T05:26:16.671Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-09-29"
+    "last_fetched": "2026-10-01"
   },
   "transactions": [
+    {
+      "date": "2026-10-01",
+      "type": "Venta",
+      "player": "Agoumé",
+      "amount": 3937300,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-01",
+      "type": "Venta",
+      "player": "Miguel Román",
+      "amount": 4103300,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-01",
+      "type": "Compra",
+      "player": "Álvaro Núñez",
+      "amount": 774000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-01",
+      "type": "Compra",
+      "player": "Olasagasti",
+      "amount": 3200000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-01",
+      "type": "Compra",
+      "player": "Unai Santos",
+      "amount": 320100,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-09-30",
+      "type": "Venta",
+      "player": "Gonzalo Villar",
+      "amount": 3289000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
     {
       "date": "2026-09-29",
       "type": "Venta",
