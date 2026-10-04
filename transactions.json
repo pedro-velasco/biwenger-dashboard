@@ -12,16 +12,33 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-10-03T10:43:02.187Z",
+    "last_updated": "2026-10-04T15:18:47.283Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-10-03"
+    "last_fetched": "2026-10-04"
   },
   "transactions": [
+    {
+      "date": "2026-10-04",
+      "type": "Venta",
+      "player": "Revivo",
+      "amount": 1744800,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-04",
+      "type": "Compra",
+      "player": "Ayoze",
+      "amount": 4500000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-10-03",
       "type": "Venta",
