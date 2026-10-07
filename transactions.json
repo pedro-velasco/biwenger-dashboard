@@ -12,16 +12,84 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-10-04T15:18:47.283Z",
+    "last_updated": "2026-10-07T05:36:27.867Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-10-04"
+    "last_fetched": "2026-10-07"
   },
   "transactions": [
+    {
+      "date": "2026-10-07",
+      "type": "Venta",
+      "player": "Buchanan",
+      "amount": 2751800,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-07",
+      "type": "Venta",
+      "player": "Iker Luque",
+      "amount": 855900,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-07",
+      "type": "Compra",
+      "player": "Iñaki Williams",
+      "amount": 2925000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-07",
+      "type": "Compra",
+      "player": "Benavidez",
+      "amount": 161000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-06",
+      "type": "Venta",
+      "player": "Koski",
+      "amount": 2925000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "Venta",
+      "player": "Cucho",
+      "amount": 5890000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "Compra",
+      "player": "Javi Morcillo",
+      "amount": 701000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "Compra",
+      "player": "Lemar",
+      "amount": 3655000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-10-04",
       "type": "Venta",
