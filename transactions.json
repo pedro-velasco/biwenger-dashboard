@@ -12,16 +12,49 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-10-09T06:23:56.545Z",
+    "last_updated": "2026-10-11T07:35:58.088Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-10-09"
+    "last_fetched": "2026-10-11"
   },
   "transactions": [
+    {
+      "date": "2026-10-11",
+      "type": "Venta",
+      "player": "Aramburu",
+      "amount": 2621500,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-11",
+      "type": "Compra",
+      "player": "De Jong",
+      "amount": 2140000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-11",
+      "type": "Compra",
+      "player": "Sivera",
+      "amount": 5261000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-11",
+      "type": "Compra",
+      "player": "Yuri",
+      "amount": 2845000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-10-09",
       "type": "Venta",
