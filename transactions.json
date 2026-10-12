@@ -12,16 +12,60 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-10-11T07:35:58.088Z",
+    "last_updated": "2026-10-12T05:43:23.290Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-10-11"
+    "last_fetched": "2026-10-12"
   },
   "transactions": [
+    {
+      "date": "2026-10-12",
+      "type": "Clausula",
+      "player": "David Otorbi",
+      "amount": 2700000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de carlos Heredia"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "Clausula",
+      "player": "David Otorbi",
+      "amount": 2700000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a Víctor Peña"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "Venta",
+      "player": "Livakovic",
+      "amount": 585400,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "Venta",
+      "player": "Vinícius Jr",
+      "amount": 13920900,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "Compra",
+      "player": "Fran González",
+      "amount": 270020,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-10-11",
       "type": "Venta",
