@@ -12,16 +12,86 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-10-13T18:42:50.170Z",
+    "last_updated": "2026-10-15T05:06:13.067Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-10-13"
+    "last_fetched": "2026-10-15"
   },
   "transactions": [
+    {
+      "date": "2026-10-15",
+      "type": "Venta",
+      "player": "Beitia",
+      "amount": 412700,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-15",
+      "type": "Venta",
+      "player": "Sierra",
+      "amount": 4747500,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-15",
+      "type": "Venta",
+      "player": "Bellingham",
+      "amount": 19027700,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-15",
+      "type": "Venta",
+      "player": "Hidalgo",
+      "amount": 890900,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-15",
+      "type": "Compra",
+      "player": "Mario Soriano",
+      "amount": 4750000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-15",
+      "type": "Compra",
+      "player": "Joaquín Muñoz",
+      "amount": 1185000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-14",
+      "type": "Venta",
+      "player": "Sivera",
+      "amount": 5281500,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-14",
+      "type": "Venta",
+      "player": "Valentín Gómez",
+      "amount": 951100,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
     {
       "date": "2026-10-13",
       "type": "Venta",
