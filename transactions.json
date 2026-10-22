@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-10-22T06:12:31.156Z",
+    "last_updated": "2026-10-22T18:40:15.333Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
@@ -55,6 +55,143 @@
       "amount": 1339000,
       "participant": "Cristian",
       "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Clausula",
+      "player": "Novoa",
+      "amount": 600100,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de Pedro"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Clausula",
+      "player": "Novoa",
+      "amount": 600100,
+      "participant": "Pedro",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a Cristian"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Salario",
+      "player": null,
+      "amount": 757900,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Salario",
+      "player": null,
+      "amount": 722500,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Salario",
+      "player": null,
+      "amount": 691800,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Salario",
+      "player": null,
+      "amount": 667700,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Salario",
+      "player": null,
+      "amount": 616800,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Salario",
+      "player": null,
+      "amount": 592900,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Salario",
+      "player": null,
+      "amount": 585800,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Prima",
+      "player": null,
+      "amount": 900000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Prima",
+      "player": null,
+      "amount": 1100000,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Prima",
+      "player": null,
+      "amount": 1150000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Prima",
+      "player": null,
+      "amount": 1150000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Prima",
+      "player": null,
+      "amount": 1350000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Prima",
+      "player": null,
+      "amount": 1550000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
+    },
+    {
+      "date": "2026-10-22",
+      "type": "Prima",
+      "player": null,
+      "amount": 1550000,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Jornada 6 (aplazada)"
     },
     {
       "date": "2026-10-21",
