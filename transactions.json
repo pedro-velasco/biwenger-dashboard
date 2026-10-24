@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-10-24T05:12:07.112Z",
+    "last_updated": "2026-10-24T14:01:11.820Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
@@ -37,6 +37,33 @@
       "amount": 1420000,
       "participant": "Cristian",
       "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-24",
+      "type": "Clausula",
+      "player": "Redondo",
+      "amount": 1640000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de Pedro"
+    },
+    {
+      "date": "2026-10-24",
+      "type": "Clausula",
+      "player": "Redondo",
+      "amount": 1640000,
+      "participant": "Pedro",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a carlos Heredia"
+    },
+    {
+      "date": "2026-10-24",
+      "type": "DepositoClausula",
+      "player": "Redondo",
+      "amount": 400000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-",
+      "note": "Nueva cláusula: 1.640.000 €"
     },
     {
       "date": "2026-10-23",
