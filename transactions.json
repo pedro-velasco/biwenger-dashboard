@@ -12,16 +12,49 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-10-24T14:01:11.820Z",
+    "last_updated": "2026-10-25T06:39:21.400Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-10-24"
+    "last_fetched": "2026-10-25"
   },
   "transactions": [
+    {
+      "date": "2026-10-25",
+      "type": "Venta",
+      "player": "Fran González",
+      "amount": 260500,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-25",
+      "type": "Compra",
+      "player": "Kubo",
+      "amount": 3603000,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-25",
+      "type": "Compra",
+      "player": "Andrés García",
+      "amount": 1621290,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-25",
+      "type": "Compra",
+      "player": "Galilea",
+      "amount": 768060,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-10-24",
       "type": "Compra",
@@ -64,6 +97,24 @@
       "participant": "carlos Heredia",
       "balance_effect": "-",
       "note": "Nueva cláusula: 1.640.000 €"
+    },
+    {
+      "date": "2026-10-24",
+      "type": "Clausula",
+      "player": "Novoa",
+      "amount": 1200200,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendedor — cobró cláusula de Cristian"
+    },
+    {
+      "date": "2026-10-24",
+      "type": "Clausula",
+      "player": "Novoa",
+      "amount": 1200200,
+      "participant": "Cristian",
+      "balance_effect": "-",
+      "note": "Comprador — pagó cláusula a Pedro"
     },
     {
       "date": "2026-10-23",
