@@ -93,8 +93,7 @@ function makeHeaders(token) {
     'Authorization': `Bearer ${token}`,
     'X-League': String(LEAGUE_ID),
     'X-User': '391541',
-    'X-Lang': 'es',
-    'X-Version': '631'
+    'X-Lang': 'es'
   };
 }
 
