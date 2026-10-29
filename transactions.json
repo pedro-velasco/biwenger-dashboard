@@ -12,16 +12,340 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-10-25T06:39:21.400Z",
+    "last_updated": "2026-10-29T15:29:56.768Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-10-25"
+    "last_fetched": "2026-10-29"
   },
   "transactions": [
+    {
+      "date": "2026-10-29",
+      "type": "Venta",
+      "player": "Pedrosa",
+      "amount": 2933600,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-29",
+      "type": "Venta",
+      "player": "Akhomach",
+      "amount": 3929200,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-29",
+      "type": "Venta",
+      "player": "Pablo Martínez",
+      "amount": 1055900,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-29",
+      "type": "Venta",
+      "player": "Baena",
+      "amount": 13297600,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-29",
+      "type": "Compra",
+      "player": "Chust",
+      "amount": 2451000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-29",
+      "type": "Compra",
+      "player": "Vivian",
+      "amount": 1810000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-29",
+      "type": "Compra",
+      "player": "Radu",
+      "amount": 4110100,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-28",
+      "type": "Venta",
+      "player": "Iago Aspas",
+      "amount": 1763700,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-28",
+      "type": "Venta",
+      "player": "Mbappé",
+      "amount": 25336700,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-28",
+      "type": "Compra",
+      "player": "Ángel Pérez",
+      "amount": 3371000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-28",
+      "type": "Compra",
+      "player": "Comesaña",
+      "amount": 2025000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-28",
+      "type": "Compra",
+      "player": "Lo Celso",
+      "amount": 3530000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-28",
+      "type": "Compra",
+      "player": "Cabrera",
+      "amount": 2674000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Salario",
+      "player": null,
+      "amount": 1078300,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Salario",
+      "player": null,
+      "amount": 760700,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Salario",
+      "player": null,
+      "amount": 729100,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Salario",
+      "player": null,
+      "amount": 728000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Salario",
+      "player": null,
+      "amount": 694200,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Salario",
+      "player": null,
+      "amount": 583800,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Salario",
+      "player": null,
+      "amount": 571200,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Prima",
+      "player": null,
+      "amount": 1050000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Jornada 10"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Prima",
+      "player": null,
+      "amount": 1050000,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Jornada 10"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Prima",
+      "player": null,
+      "amount": 1100000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Jornada 10"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Prima",
+      "player": null,
+      "amount": 1100000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Jornada 10"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Prima",
+      "player": null,
+      "amount": 1250000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Jornada 10"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Prima",
+      "player": null,
+      "amount": 1500000,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Jornada 10"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Prima",
+      "player": null,
+      "amount": 1550000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Jornada 10"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Venta",
+      "player": "David Otorbi",
+      "amount": 2889000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Venta",
+      "player": "Andrés García",
+      "amount": 1592600,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Venta",
+      "player": "Mojica",
+      "amount": 2326900,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Compra",
+      "player": "Etta Eyong",
+      "amount": 1730000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-27",
+      "type": "Compra",
+      "player": "Pedri",
+      "amount": 14305000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-26",
+      "type": "Venta",
+      "player": "Enes Ünal",
+      "amount": 2655800,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-26",
+      "type": "Venta",
+      "player": "Hugo Álvarez",
+      "amount": 1155300,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-26",
+      "type": "Venta",
+      "player": "Driouech",
+      "amount": 527700,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-26",
+      "type": "Venta",
+      "player": "Rubén Sánchez",
+      "amount": 1000700,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-26",
+      "type": "Compra",
+      "player": "Mbappé",
+      "amount": 24120000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-26",
+      "type": "Compra",
+      "player": "Revivo",
+      "amount": 2060000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-10-25",
       "type": "Venta",
