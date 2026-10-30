@@ -12,16 +12,86 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-10-29T15:29:56.768Z",
+    "last_updated": "2026-10-30T06:25:15.337Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-10-29"
+    "last_fetched": "2026-10-30"
   },
   "transactions": [
+    {
+      "date": "2026-10-30",
+      "type": "Venta",
+      "player": "Unai Núñez",
+      "amount": 1202200,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-30",
+      "type": "Venta",
+      "player": "Robert Navarro",
+      "amount": 5312900,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-30",
+      "type": "Venta",
+      "player": "Deossa",
+      "amount": 3019200,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-30",
+      "type": "Venta",
+      "player": "Cabrera",
+      "amount": 2674700,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-30",
+      "type": "Venta",
+      "player": "Aitor Fernández",
+      "amount": 1296500,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-30",
+      "type": "Venta",
+      "player": "Fran Pérez",
+      "amount": 293000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-10-30",
+      "type": "Compra",
+      "player": "Sancet",
+      "amount": 3320010,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-10-30",
+      "type": "Compra",
+      "player": "Berenguer",
+      "amount": 4525000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-10-29",
       "type": "Venta",
