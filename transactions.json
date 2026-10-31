@@ -12,16 +12,24 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-10-30T06:25:15.337Z",
+    "last_updated": "2026-10-31T10:01:03.218Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-10-30"
+    "last_fetched": "2026-10-31"
   },
   "transactions": [
+    {
+      "date": "2026-10-31",
+      "type": "Compra",
+      "player": "Kike Salas",
+      "amount": 3275000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-10-30",
       "type": "Venta",
