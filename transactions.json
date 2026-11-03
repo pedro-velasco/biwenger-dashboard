@@ -12,16 +12,83 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-11-01T18:42:49.971Z",
+    "last_updated": "2026-11-03T06:24:17.231Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-11-01"
+    "last_fetched": "2026-11-03"
   },
   "transactions": [
+    {
+      "date": "2026-11-03",
+      "type": "Venta",
+      "player": "Marcos Alonso",
+      "amount": 2495400,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-03",
+      "type": "Compra",
+      "player": "Bauzà",
+      "amount": 490000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-03",
+      "type": "Compra",
+      "player": "Bernardo Silva",
+      "amount": 4231000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-02",
+      "type": "Venta",
+      "player": "Kubo",
+      "amount": 3167100,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-02",
+      "type": "Venta",
+      "player": "Óscar Valentín",
+      "amount": 1146900,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-02",
+      "type": "Compra",
+      "player": "Maciá",
+      "amount": 790000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-02",
+      "type": "Compra",
+      "player": "Rafa Rodríguez",
+      "amount": 340002,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-02",
+      "type": "Compra",
+      "player": "Courtois",
+      "amount": 5935750,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-11-01",
       "type": "Venta",
