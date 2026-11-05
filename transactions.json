@@ -12,16 +12,59 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-11-04T06:29:02.210Z",
+    "last_updated": "2026-11-05T06:29:15.984Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso).",
       "Salario = coste de plantilla por jornada (gasto).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-11-04"
+    "last_fetched": "2026-11-05"
   },
   "transactions": [
+    {
+      "date": "2026-11-05",
+      "type": "Venta",
+      "player": "Rafa Rodríguez",
+      "amount": 346200,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-05",
+      "type": "Venta",
+      "player": "Novoa",
+      "amount": 1275500,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-05",
+      "type": "Venta",
+      "player": "Bernardo Silva",
+      "amount": 4288600,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-05",
+      "type": "Compra",
+      "player": "Diego Conde",
+      "amount": 244700,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-05",
+      "type": "Compra",
+      "player": "Valou",
+      "amount": 160001,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-11-04",
       "type": "Venta",
