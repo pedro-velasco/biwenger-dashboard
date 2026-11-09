@@ -90,6 +90,7 @@ h2 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacin
 .tx-Prima            { background:#1a1f35; color:#a78bfa; }
 .tx-Salario          { background:#2a1515; color:#f87171; }
 .tx-DepositoClausula { background:#1a2a1a; color:#86efac; }
+.tx-Ajuste           { background:#2a2a2a; color:#e5e7eb; }
 .tx-total td { background: var(--bg3); font-weight: 600; }
 
 footer { text-align: center; padding: 24px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); margin-top: 32px; }
@@ -224,14 +225,16 @@ function buildSaldo(transactions) {
 }
 
 function buildPrimas(transactions) {
+  const jornada = note => note.replace(/\s*\(aplazada\)$/, '');
   const primas = transactions.filter(t => t.type === 'Prima');
-  const rounds = [...new Set(primas.map(t => t.note))].sort();
+  const rounds = [...new Set(primas.map(t => jornada(t.note)))]
+    .sort((a, b) => parseInt(a.replace(/\D/g, '')) - parseInt(b.replace(/\D/g, '')));
   if (!rounds.length) return null;
   const series = Object.fromEntries(
-    participants.map(p => [p, rounds.map(r => {
-      const pt = primas.find(t => t.participant === p && t.note === r);
-      return pt ? pt.amount : 0;
-    })])
+    participants.map(p => [p, rounds.map(r => primas
+      .filter(t => t.participant === p && jornada(t.note) === r)
+      .reduce((s, t) => s + (t.balance_effect === '+' ? t.amount : -t.amount), 0)
+    )])
   );
   return { rounds, series };
 }

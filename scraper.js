@@ -4,8 +4,8 @@
  * Uses the /api/v2/league/{id}/board endpoint (paginated) to fetch all
  * financial events and saves them to transactions.json.
  *
- * Incremental mode: on each run, only fetches events newer than
- * metadata.last_fetched. On first run, fetches the full season history.
+ * Each run rebuilds the full season from the board: postponed rounds report
+ * cumulative bonuses, so primas can only be computed with every part in view.
  *
  * Usage:
  *   BIWENGER_EMAIL=x BIWENGER_PASSWORD=y node scraper.js
@@ -44,36 +44,27 @@ function loadData() {
       participants: ['carlos Heredia', 'Cristian', 'Jordi', 'Pedro', 'Víctor Peña', 'Victor Ramos', 'Victor Sanchez'],
       last_fetched: null,
       last_updated: null,
-      notes: [
-        'Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).',
-        'Prima = bonus de jornada (ingreso).',
-        'Salario = coste de plantilla por jornada (gasto).',
-        'Importes en euros (enteros, sin puntos ni símbolo €).'
-      ]
+      notes: []
     },
     transactions: []
   };
 }
+
+const NOTES = [
+  'Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).',
+  'Prima = bonus de jornada (ingreso). En jornadas aplazadas Biwenger publica la prima acumulada; se registra solo la diferencia con lo ya cobrado en partes anteriores.',
+  'Salario = coste de plantilla por jornada (gasto).',
+  'Ajuste = bonus manual del administrador (+ o −).',
+  'Importes en euros (enteros, sin puntos ni símbolo €).'
+];
 
 function saveData(data) {
   if (data.transactions.length > 0) {
     data.metadata.last_fetched = data.transactions.map(t => t.date).sort().at(-1);
   }
   data.metadata.last_updated = new Date().toISOString();
-  data.metadata.notes = (data.metadata.notes || []).filter(n => !n.startsWith('AVISO'));
+  data.metadata.notes = NOTES;
   fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2), 'utf8');
-}
-
-function txKey(t) {
-  return `${t.date}|${t.type}|${t.player ?? ''}|${t.amount}|${t.participant}`;
-}
-
-function mergeTransactions(existing, incoming) {
-  const seen = new Set(existing.map(txKey));
-  const added = incoming.filter(t => !seen.has(txKey(t)));
-  if (!added.length) return { merged: existing, addedCount: 0 };
-  const merged = [...existing, ...added].sort((a, b) => b.date.localeCompare(a.date));
-  return { merged, addedCount: added.length };
 }
 
 // ── API helpers ────────────────────────────────────────────────────────────────
@@ -180,6 +171,29 @@ async function getPlayerNames() {
   }
 }
 
+// Players no longer in La Liga are missing from the competition endpoint
+async function fillMissingPlayerNames(playerNames, boardItems) {
+  const ids = new Set();
+  for (const item of boardItems) {
+    if (!['market', 'transfer', 'clauseIncrement'].includes(item.type)) continue;
+    for (const c of item.content) if (c.player && !playerNames[c.player]) ids.add(c.player);
+  }
+  for (const id of ids) {
+    try {
+      const res = await fetch(`https://cf.biwenger.com/api/v2/players/la-liga/${id}?lang=es&fields=id,name`);
+      const name = (await res.json()).data?.name;
+      if (name) playerNames[id] = name;
+    } catch (e) {
+      console.warn(`[scraper] could not fetch name for player ${id}:`, e.message);
+    }
+  }
+}
+
+const NON_FINANCIAL_TYPES = new Set([
+  'roundStarted', 'roundLineupChanged', 'playerMovements', 'teamMovements', 'bettingPool',
+  'adminText', 'text', 'article', 'poll', 'leagueSettings', 'leagueReset', 'userLeave', 'seasonFinished'
+]);
+
 // ── Board → transaction mapping ────────────────────────────────────────────────
 /**
  * Confirmed mapping (validated against Pedro's exact API balance):
@@ -189,10 +203,15 @@ async function getPlayerNames() {
  * item.type === 'transfer', c.type === 'immediateSale', c.from = user → Venta (sale, balance +)
  * item.type === 'transfer', c.type === 'clause', c.from = seller → Clausula received (+)
  * item.type === 'transfer', c.type === 'clause', c.to   = buyer  → Clausula paid (-)
- * item.type === 'roundFinished', results[].bonus > 0 → Prima (bonus, balance +)
+ * item.type === 'roundFinished', results[].bonus → Prima (balance +), cumulative per jornada:
+ *   a postponed round ("Jornada 6 (aplazada)", step 2, 3…) reports the total bonus for the
+ *   whole jornada, so only the difference vs. earlier parts is paid (validated vs. real balances)
  * item.type === 'salaries', content[].amount      → Salario (cost, balance -) — one item per jornada, all participants
+ * item.type === 'bonus', content[].amount (±)     → Ajuste (manual admin bonus/penalty)
+ *
+ * Items must be processed oldest-first so `primasPaid` holds earlier parts of each jornada.
  */
-function boardItemToTransactions(item, playerNames, todayISO) {
+function boardItemToTransactions(item, playerNames, primasPaid) {
   const date = new Date(item.date * 1000).toISOString().slice(0, 10);
   const txs = [];
 
@@ -283,19 +302,38 @@ function boardItemToTransactions(item, playerNames, todayISO) {
 
   if (item.type === 'roundFinished') {
     const round = item.content?.round?.name ?? 'Jornada ?';
+    const jornada = round.replace(/\s*\(aplazada\)$/, '');
     for (const r of (item.content?.results ?? [])) {
-      if (r.bonus) {
-        txs.push({
-          date, type: 'Prima', player: null,
-          amount: r.bonus,
-          participant: r.user.name,
-          balance_effect: '+',
-          note: round
-        });
-      }
+      const key = `${jornada}|${r.user.id}`;
+      const delta = (r.bonus ?? 0) - (primasPaid[key] ?? 0);
+      primasPaid[key] = r.bonus ?? 0;
+      if (!delta) continue;
+      txs.push({
+        date, type: 'Prima', player: null,
+        amount: Math.abs(delta),
+        participant: r.user.name,
+        balance_effect: delta > 0 ? '+' : '-',
+        note: round
+      });
     }
     return txs;
   }
+
+  if (item.type === 'bonus') {
+    for (const c of item.content) {
+      if (!c.user || !c.amount) continue;
+      txs.push({
+        date, type: 'Ajuste', player: null,
+        amount: Math.abs(c.amount),
+        participant: c.user.name,
+        balance_effect: c.amount > 0 ? '+' : '-',
+        note: c.reason ?? 'Ajuste del administrador'
+      });
+    }
+    return txs;
+  }
+
+  if (NON_FINANCIAL_TYPES.has(item.type)) return txs;
 
   // Salaries are a separate board item type (one per jornada, all participants)
   if (item.type === 'salaries') {
@@ -327,14 +365,11 @@ async function main() {
     process.exit(1);
   }
 
-  const data      = loadData();
-  const todayISO  = new Date().toISOString().slice(0, 10);
-  const stopDate  = data.metadata.last_fetched ?? SEASON_START;
-  const stopTs    = new Date(stopDate).getTime() / 1000;
-  const isFullRun = !data.metadata.last_fetched;
+  const data    = loadData();
+  const seasonTs = new Date(SEASON_START).getTime() / 1000;
+  const previousCount = data.transactions.length;
 
-  console.log(`[scraper] mode: ${isFullRun ? 'FULL HISTORY from ' + SEASON_START : 'INCREMENTAL from ' + stopDate}`);
-  console.log(`[scraper] existing transactions: ${data.transactions.length}`);
+  console.log(`[scraper] rebuilding season from ${SEASON_START} (existing transactions: ${previousCount})`);
 
   // 1. Auth
   const token   = await getToken(email, password);
@@ -345,56 +380,30 @@ async function main() {
   await getLeagueConfig(headers);
   console.log('[scraper] league config saved');
 
-  // 3. Fetch board pages until we reach stopDate
-  // In full mode: collect everything from SEASON_START onwards.
-  // In incremental mode: collect items whose date >= stopDate and let
-  // mergeTransactions dedup items that are already in the file.
+  // 3. Fetch board pages back to the season start
   const boardItems = [];
-  const cutoffDate = isFullRun ? SEASON_START : stopDate; // stop fetching pages older than this
-
   for (let offset = 0; ; offset += 100) {
     const page = await getBoardPage(headers, offset);
     if (!page.length) break;
-
-    boardItems.push(...page);
-
-    const oldestOnPage = page.at(-1).date;
-    const oldestDate   = new Date(oldestOnPage * 1000).toISOString().slice(0, 10);
-    console.log(`[scraper] page offset=${offset}: ${page.length} items, oldest=${oldestDate}`);
-
-    // Stop once the oldest item on this page is strictly before the cutoff date
-    if (oldestDate < cutoffDate) break;
+    boardItems.push(...page.filter(i => i.date >= seasonTs));
+    if (page.at(-1).date < seasonTs) break;
   }
-
-  console.log(`[scraper] board items to process: ${boardItems.length}`);
+  boardItems.sort((a, b) => a.date - b.date);
+  console.log(`[scraper] board items this season: ${boardItems.length}`);
 
   // 4. Get player names
   const playerNames = await getPlayerNames();
+  await fillMissingPlayerNames(playerNames, boardItems);
   console.log(`[scraper] player names loaded: ${Object.keys(playerNames).length}`);
 
-  // 5. Convert board items to transactions and filter by date range
-  const incoming = [];
-  for (const item of boardItems) {
-    const txs = boardItemToTransactions(item, playerNames, todayISO);
-    for (const tx of txs) {
-      if (tx.date < cutoffDate) continue; // skip items outside the desired range
-      incoming.push(tx);
-    }
-  }
+  // 5. Convert board items (oldest first) to transactions
+  const primasPaid = {};
+  const transactions = boardItems.flatMap(item => boardItemToTransactions(item, playerNames, primasPaid));
 
-  console.log(`[scraper] new transactions parsed: ${incoming.length}`);
-
-  // 6. Merge and save
-  const { merged, addedCount } = mergeTransactions(data.transactions, incoming);
-  data.transactions = merged;
-
-  if (addedCount > 0 || isFullRun) {
-    saveData(data);
-    console.log(`[scraper] ✓ saved ${addedCount} new transactions. Total: ${data.transactions.length}`);
-  } else {
-    saveData(data); // still update last_updated timestamp
-    console.log('[scraper] no new transactions.');
-  }
+  // 6. Save, newest first
+  data.transactions = transactions.reverse();
+  saveData(data);
+  console.log(`[scraper] ✓ saved ${data.transactions.length} transactions (before: ${previousCount})`);
 }
 
 main().catch(err => { console.error('[scraper] fatal:', err); process.exit(1); });
