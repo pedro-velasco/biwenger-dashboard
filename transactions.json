@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-11-09T09:58:04.781Z",
+    "last_updated": "2026-11-09T09:59:38.857Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso). En jornadas aplazadas Biwenger publica la prima acumulada; se registra solo la diferencia con lo ya cobrado en partes anteriores.",
