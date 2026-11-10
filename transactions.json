@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-11-09T09:59:38.857Z",
+    "last_updated": "2026-11-10T08:19:02.670Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso). En jornadas aplazadas Biwenger publica la prima acumulada; se registra solo la diferencia con lo ya cobrado en partes anteriores.",
@@ -20,9 +20,161 @@
       "Ajuste = bonus manual del administrador (+ o −).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-11-09"
+    "last_fetched": "2026-11-10"
   },
   "transactions": [
+    {
+      "date": "2026-11-10",
+      "type": "Venta",
+      "player": "Bauzà",
+      "amount": 524800,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "Venta",
+      "player": "José Salinas",
+      "amount": 441300,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "Compra",
+      "player": "Pubill",
+      "amount": 5504000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "Compra",
+      "player": "Prati",
+      "amount": 691000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "Compra",
+      "player": "Aubameyang",
+      "amount": 9750000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Salario",
+      "player": null,
+      "amount": 600700,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Salario",
+      "player": null,
+      "amount": 616000,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Salario",
+      "player": null,
+      "amount": 654700,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Salario",
+      "player": null,
+      "amount": 703900,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Salario",
+      "player": null,
+      "amount": 740100,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Salario",
+      "player": null,
+      "amount": 789300,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Salario",
+      "player": null,
+      "amount": 852500,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Prima",
+      "player": null,
+      "amount": 1500000,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Jornada 12"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Prima",
+      "player": null,
+      "amount": 1350000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Jornada 12"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Prima",
+      "player": null,
+      "amount": 1100000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Jornada 12"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Prima",
+      "player": null,
+      "amount": 1100000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Jornada 12"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Prima",
+      "player": null,
+      "amount": 1050000,
+      "participant": "carlos Heredia",
+      "balance_effect": "+",
+      "note": "Jornada 12"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "Prima",
+      "player": null,
+      "amount": 1000000,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Jornada 12"
+    },
     {
       "date": "2026-11-09",
       "type": "Venta",
