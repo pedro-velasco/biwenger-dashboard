@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-11-11T06:31:51.230Z",
+    "last_updated": "2026-11-12T06:34:36.643Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso). En jornadas aplazadas Biwenger publica la prima acumulada; se registra solo la diferencia con lo ya cobrado en partes anteriores.",
@@ -20,9 +20,77 @@
       "Ajuste = bonus manual del administrador (+ o −).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-11-11"
+    "last_fetched": "2026-11-12"
   },
   "transactions": [
+    {
+      "date": "2026-11-12",
+      "type": "Venta",
+      "player": "Guedes",
+      "amount": 3895000,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "Venta",
+      "player": "Pau Navarro",
+      "amount": 959400,
+      "participant": "Victor Sanchez",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "Venta",
+      "player": "Barrenetxea",
+      "amount": 3214100,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "Venta",
+      "player": "Davinchi",
+      "amount": 415600,
+      "participant": "Jordi",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "Compra",
+      "player": "Alejandro Santiago",
+      "amount": 1181000,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "Compra",
+      "player": "Unai Simón",
+      "amount": 4304420,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "Compra",
+      "player": "Gorrotxategi",
+      "amount": 1605000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-12",
+      "type": "Compra",
+      "player": "Vinícius Jr",
+      "amount": 11052030,
+      "participant": "Jordi",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-11-11",
       "type": "Venta",
