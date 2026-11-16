@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-11-15T07:26:34.490Z",
+    "last_updated": "2026-11-16T18:36:58.340Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso). En jornadas aplazadas Biwenger publica la prima acumulada; se registra solo la diferencia con lo ya cobrado en partes anteriores.",
@@ -20,9 +20,67 @@
       "Ajuste = bonus manual del administrador (+ o −).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-11-15"
+    "last_fetched": "2026-11-16"
   },
   "transactions": [
+    {
+      "date": "2026-11-16",
+      "type": "Venta",
+      "player": "Ángel Pérez",
+      "amount": 2854500,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "Venta",
+      "player": "Rincón",
+      "amount": 1412200,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "Compra",
+      "player": "Manu Bueno",
+      "amount": 429000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "Compra",
+      "player": "Tárrega",
+      "amount": 1520000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "Compra",
+      "player": "Raphinha",
+      "amount": 26066000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "Compra",
+      "player": "Sadick",
+      "amount": 1044000,
+      "participant": "Victor Sanchez",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "Compra",
+      "player": "Dituro",
+      "amount": 4000000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-11-15",
       "type": "Venta",
