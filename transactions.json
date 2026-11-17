@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-11-16T18:36:58.340Z",
+    "last_updated": "2026-11-17T06:36:25.746Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso). En jornadas aplazadas Biwenger publica la prima acumulada; se registra solo la diferencia con lo ya cobrado en partes anteriores.",
@@ -20,9 +20,69 @@
       "Ajuste = bonus manual del administrador (+ o −).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-11-16"
+    "last_fetched": "2026-11-17"
   },
   "transactions": [
+    {
+      "date": "2026-11-17",
+      "type": "Venta",
+      "player": "Comesaña",
+      "amount": 1656200,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "Venta",
+      "player": "Oyarzabal",
+      "amount": 10604500,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "Venta",
+      "player": "Johnny",
+      "amount": 2186900,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "Venta",
+      "player": "Revivo",
+      "amount": 2990200,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "Compra",
+      "player": "Óskarsson",
+      "amount": 4016000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "Compra",
+      "player": "Isco",
+      "amount": 12299000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-17",
+      "type": "Compra",
+      "player": "Eric García",
+      "amount": 5550000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-11-16",
       "type": "Venta",
