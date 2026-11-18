@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-11-17T06:36:25.746Z",
+    "last_updated": "2026-11-18T06:31:32.477Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso). En jornadas aplazadas Biwenger publica la prima acumulada; se registra solo la diferencia con lo ya cobrado en partes anteriores.",
@@ -20,9 +20,79 @@
       "Ajuste = bonus manual del administrador (+ o −).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-11-17"
+    "last_fetched": "2026-11-18"
   },
   "transactions": [
+    {
+      "date": "2026-11-18",
+      "type": "Venta",
+      "player": "Raphinha",
+      "amount": 26484000,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Venta",
+      "player": "Alfonso Herrero",
+      "amount": 2592000,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Venta",
+      "player": "Borja Iglesias",
+      "amount": 1811900,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Venta",
+      "player": "Pubill",
+      "amount": 4914200,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Venta",
+      "player": "Vivian",
+      "amount": 4079100,
+      "participant": "Cristian",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Venta",
+      "player": "Giménez",
+      "amount": 3272300,
+      "participant": "Víctor Peña",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Compra",
+      "player": "Torró",
+      "amount": 745002,
+      "participant": "Victor Ramos",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "Compra",
+      "player": "Dani Martínez",
+      "amount": 170000,
+      "participant": "Víctor Peña",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-11-17",
       "type": "Venta",
