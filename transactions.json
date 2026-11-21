@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-11-20T06:07:37.241Z",
+    "last_updated": "2026-11-21T06:39:09.034Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso). En jornadas aplazadas Biwenger publica la prima acumulada; se registra solo la diferencia con lo ya cobrado en partes anteriores.",
@@ -20,9 +20,49 @@
       "Ajuste = bonus manual del administrador (+ o −).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-11-20"
+    "last_fetched": "2026-11-21"
   },
   "transactions": [
+    {
+      "date": "2026-11-21",
+      "type": "Compra",
+      "player": "Hartman",
+      "amount": 979190,
+      "participant": "carlos Heredia",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "Compra",
+      "player": "Thiago Fernández",
+      "amount": 1498000,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-21",
+      "type": "Compra",
+      "player": "Rubén Sánchez",
+      "amount": 630000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "Venta",
+      "player": "Facundo Bernal",
+      "amount": 500000,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "Venta",
+      "player": "Jauregizar",
+      "amount": 485000,
+      "participant": "Jordi",
+      "balance_effect": "+"
+    },
     {
       "date": "2026-11-20",
       "type": "Venta",
