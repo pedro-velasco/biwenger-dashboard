@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-11-23T06:40:46.495Z",
+    "last_updated": "2026-11-23T22:13:03.504Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso). En jornadas aplazadas Biwenger publica la prima acumulada; se registra solo la diferencia con lo ya cobrado en partes anteriores.",
@@ -23,6 +23,15 @@
     "last_fetched": "2026-11-23"
   },
   "transactions": [
+    {
+      "date": "2026-11-23",
+      "type": "DepositoClausula",
+      "player": "Redondo",
+      "amount": 500000,
+      "participant": "Pedro",
+      "balance_effect": "-",
+      "note": "Nueva cláusula: 3.780.000 €"
+    },
     {
       "date": "2026-11-23",
       "type": "Venta",
