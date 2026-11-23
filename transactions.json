@@ -12,7 +12,7 @@
       "Victor Ramos",
       "Victor Sanchez"
     ],
-    "last_updated": "2026-11-22T07:57:22.838Z",
+    "last_updated": "2026-11-23T06:40:46.495Z",
     "notes": [
       "Clausula con seller explícito genera dos registros: comprador (−) y vendedor (+).",
       "Prima = bonus de jornada (ingreso). En jornadas aplazadas Biwenger publica la prima acumulada; se registra solo la diferencia con lo ya cobrado en partes anteriores.",
@@ -20,9 +20,43 @@
       "Ajuste = bonus manual del administrador (+ o −).",
       "Importes en euros (enteros, sin puntos ni símbolo €)."
     ],
-    "last_fetched": "2026-11-21"
+    "last_fetched": "2026-11-23"
   },
   "transactions": [
+    {
+      "date": "2026-11-23",
+      "type": "Venta",
+      "player": "Christensen",
+      "amount": 1339400,
+      "participant": "Victor Ramos",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "Venta",
+      "player": "Expósito",
+      "amount": 5212800,
+      "participant": "Pedro",
+      "balance_effect": "+",
+      "note": "Vendido a ?"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "Compra",
+      "player": "Oriol Rey",
+      "amount": 651290,
+      "participant": "Pedro",
+      "balance_effect": "-"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "Compra",
+      "player": "Konaté",
+      "amount": 6360000,
+      "participant": "Cristian",
+      "balance_effect": "-"
+    },
     {
       "date": "2026-11-21",
       "type": "Clausula",
